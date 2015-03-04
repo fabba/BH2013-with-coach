@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>bush</ProjectName>
+    <ProjectGuid>{BD8285AE-52A5-79F0-7895-E3659B76EFD8}</ProjectGuid>
+    <RootNamespace>bush</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\bush\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\bush\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\bush\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\bush\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\bush\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\bush\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">bush</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.exe</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bush</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bush</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Src;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Src;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Src;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_TOOL;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Utils\bush\bush.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\Initializer.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\Session.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\agents\PingAgent.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\agents\RemoteRobotAgent.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\agents\TeamCommAgent.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\bhwrapper\Framework.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\bhwrapper\TeamCommWrapper.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\AbstractConsole.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\CommandAdapter.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\Commands.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\Context.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\ProcessRunner.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\RobotCommand.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ChangeWirelessCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\CompileCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DebugRequestCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DeployCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DownloadLogsCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ExitCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\HelpCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\PingCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\RestartCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\SCPCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ShowCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ShutdownCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\SSHCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\UpdateSettingsCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\UpdateWirelessCmd.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\models\Power.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\models\Robot.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\models\Team.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ConfigMap.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ConfigMapParser.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\Filesystem.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\Platform.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ShellTools.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\tools\StringTools.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\CommandLineCompleter.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\CommandLineEdit.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\Console.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\MainWindow.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\RobotPool.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\RobotView.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\ShortcutBar.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\TeamSelector.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\TeamView.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\ui\VisualContext.cpp" />
+    <ClInclude Include="..\..\Src\Utils\bush\Initializer.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\Session.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"Session.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/Session.h -o ../../Build/bush/Win32/Develop/moc_Session.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_Session.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"Session.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/Session.h -o ../../Build/bush/Win32/Debug/moc_Session.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_Session.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"Session.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/Session.h -o ../../Build/bush/Win32/Release/moc_Session.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_Session.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\agents\PingAgent.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"PingAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/PingAgent.h -o ../../Build/bush/Win32/Develop/moc_PingAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_PingAgent.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"PingAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/PingAgent.h -o ../../Build/bush/Win32/Debug/moc_PingAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_PingAgent.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"PingAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/PingAgent.h -o ../../Build/bush/Win32/Release/moc_PingAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_PingAgent.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\agents\RemoteRobotAgent.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\agents\TeamCommAgent.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"TeamCommAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/TeamCommAgent.h -o ../../Build/bush/Win32/Develop/moc_TeamCommAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_TeamCommAgent.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"TeamCommAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/TeamCommAgent.h -o ../../Build/bush/Win32/Debug/moc_TeamCommAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_TeamCommAgent.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"TeamCommAgent.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/agents/TeamCommAgent.h -o ../../Build/bush/Win32/Release/moc_TeamCommAgent.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_TeamCommAgent.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\bhwrapper\Framework.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\bhwrapper\TeamCommWrapper.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\AbstractConsole.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"AbstractConsole.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/AbstractConsole.h -o ../../Build/bush/Win32/Develop/moc_AbstractConsole.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_AbstractConsole.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"AbstractConsole.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/AbstractConsole.h -o ../../Build/bush/Win32/Debug/moc_AbstractConsole.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_AbstractConsole.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"AbstractConsole.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/AbstractConsole.h -o ../../Build/bush/Win32/Release/moc_AbstractConsole.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_AbstractConsole.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\Command.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\CommandAdapter.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\Commands.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\Context.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"Context.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/Context.h -o ../../Build/bush/Win32/Develop/moc_Context.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_Context.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"Context.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/Context.h -o ../../Build/bush/Win32/Debug/moc_Context.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_Context.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"Context.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/Context.h -o ../../Build/bush/Win32/Release/moc_Context.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_Context.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\IConsole.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\ProcessRunner.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ProcessRunner.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/ProcessRunner.h -o ../../Build/bush/Win32/Develop/moc_ProcessRunner.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_ProcessRunner.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ProcessRunner.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/ProcessRunner.h -o ../../Build/bush/Win32/Debug/moc_ProcessRunner.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_ProcessRunner.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ProcessRunner.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/cmdlib/ProcessRunner.h -o ../../Build/bush/Win32/Release/moc_ProcessRunner.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_ProcessRunner.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\RobotCommand.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ChangeWirelessCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\CompileCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DebugRequestCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DeployCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DownloadLogsCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ExitCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\HelpCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\PingCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\RestartCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\SCPCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ShowCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ShutdownCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\SSHCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\UpdateSettingsCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\UpdateWirelessCmd.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\models\Power.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\models\Robot.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\models\Team.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ConfigMap.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ConfigMapParser.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Filesystem.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Platform.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ShellTools.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Sleeper.h" />
+    <ClInclude Include="..\..\Src\Utils\bush\tools\StringTools.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\CommandLineCompleter.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"CommandLineCompleter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/CommandLineCompleter.h -o ../../Build/bush/Win32/Develop/moc_CommandLineCompleter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_CommandLineCompleter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"CommandLineCompleter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/CommandLineCompleter.h -o ../../Build/bush/Win32/Debug/moc_CommandLineCompleter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_CommandLineCompleter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"CommandLineCompleter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/CommandLineCompleter.h -o ../../Build/bush/Win32/Release/moc_CommandLineCompleter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_CommandLineCompleter.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\ui\CommandLineEdit.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\Console.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"Console.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/Console.h -o ../../Build/bush/Win32/Develop/moc_Console.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_Console.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"Console.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/Console.h -o ../../Build/bush/Win32/Debug/moc_Console.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_Console.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"Console.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/Console.h -o ../../Build/bush/Win32/Release/moc_Console.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_Console.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\MainWindow.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/MainWindow.h -o ../../Build/bush/Win32/Develop/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_MainWindow.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/MainWindow.h -o ../../Build/bush/Win32/Debug/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_MainWindow.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/MainWindow.h -o ../../Build/bush/Win32/Release/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_MainWindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\RobotPool.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"RobotPool.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotPool.h -o ../../Build/bush/Win32/Develop/moc_RobotPool.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_RobotPool.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"RobotPool.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotPool.h -o ../../Build/bush/Win32/Debug/moc_RobotPool.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_RobotPool.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"RobotPool.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotPool.h -o ../../Build/bush/Win32/Release/moc_RobotPool.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_RobotPool.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\RobotView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"RobotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotView.h -o ../../Build/bush/Win32/Develop/moc_RobotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_RobotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"RobotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotView.h -o ../../Build/bush/Win32/Debug/moc_RobotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_RobotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"RobotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/RobotView.h -o ../../Build/bush/Win32/Release/moc_RobotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_RobotView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\ShortcutBar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ShortcutBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/ShortcutBar.h -o ../../Build/bush/Win32/Develop/moc_ShortcutBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_ShortcutBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ShortcutBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/ShortcutBar.h -o ../../Build/bush/Win32/Debug/moc_ShortcutBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_ShortcutBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ShortcutBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/ShortcutBar.h -o ../../Build/bush/Win32/Release/moc_ShortcutBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_ShortcutBar.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\TeamSelector.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"TeamSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamSelector.h -o ../../Build/bush/Win32/Develop/moc_TeamSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_TeamSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"TeamSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamSelector.h -o ../../Build/bush/Win32/Debug/moc_TeamSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_TeamSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"TeamSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamSelector.h -o ../../Build/bush/Win32/Release/moc_TeamSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_TeamSelector.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\TeamView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"TeamView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamView.h -o ../../Build/bush/Win32/Develop/moc_TeamView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_TeamView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"TeamView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamView.h -o ../../Build/bush/Win32/Debug/moc_TeamView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_TeamView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"TeamView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/TeamView.h -o ../../Build/bush/Win32/Release/moc_TeamView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_TeamView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\VisualContext.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"VisualContext.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/VisualContext.h -o ../../Build/bush/Win32/Develop/moc_VisualContext.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/moc_VisualContext.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"VisualContext.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/VisualContext.h -o ../../Build/bush/Win32/Debug/moc_VisualContext.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/moc_VisualContext.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"VisualContext.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DTARGET_TOOL -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Src/Utils/bush/ui/VisualContext.h -o ../../Build/bush/Win32/Release/moc_VisualContext.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/moc_VisualContext.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Src\Platform\Win32\BHAssert.cpp" />
+    <ClInclude Include="..\..\Src\Platform\Win32\BHAssert.h" />
+    <ClCompile Include="..\..\Src\Platform\Win32\Semaphore.cpp" />
+    <ClInclude Include="..\..\Src\Platform\Win32\Semaphore.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\Thread.h" />
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\SystemCall.cpp" />
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\SystemCall.h" />
+    <ClInclude Include="..\..\Src\Platform\BHAssert.h" />
+    <ClInclude Include="..\..\Src\Platform\Camera.h" />
+    <ClInclude Include="..\..\Src\Platform\DebugHandler.h" />
+    <ClInclude Include="..\..\Src\Platform\File.h" />
+    <ClInclude Include="..\..\Src\Platform\Semaphore.h" />
+    <ClInclude Include="..\..\Src\Platform\SystemCall.h" />
+    <ClInclude Include="..\..\Src\Platform\TcpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\Thread.h" />
+    <ClInclude Include="..\..\Src\Platform\UdpComm.h" />
+    <ClCompile Include="..\..\Src\Platform\Common\File.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Common\TcpComm.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Common\UdpComm.cpp" />
+    <ClInclude Include="..\..\Src\Platform\Common\File.h" />
+    <ClInclude Include="..\..\Src\Platform\Common\TcpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\Common\UdpComm.h" />
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Directory.cpp" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Directory.h" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Directory.h" />
+    <ClCompile Include="..\..\Src\Tools\Enum.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Enum.h" />
+    <ClCompile Include="..\..\Src\Tools\Global.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Global.h" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataTable.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataTable.h" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugRequest.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugRequest.h" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\TcpConnection.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\TcpConnection.h" />
+    <ClCompile Include="..\..\Src\Tools\Streams\InOut.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\InStreams.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\OutStreams.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\SimpleMap.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\Streamable.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\StreamHandler.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Streams\AutoStreamable.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\InOut.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\InStreams.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\OutStreams.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\SimpleMap.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\Streamable.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\StreamHandler.h" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\InMessage.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueue.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\OutMessage.cpp" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\InMessage.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageIDs.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueue.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\OutMessage.h" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\TeamHandler.cpp" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\TeamHandler.h" />
+    <ClCompile Include="..\..\Src\Tools\Settings.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Settings.h" />
+    <ResourceCompile Include="..\..\Src\Utils\bush\bush.rc" />
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\bush\Win32\Develop\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/QtCore4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\bush\Win32\Debug\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/QtCore4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\bush\Win32\Release\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/QtCore4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\bush\Win32\Develop\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/QtGui4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\bush\Win32\Debug\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/QtGui4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\bush\Win32\Release\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/QtGui4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\bush.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"bush.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name bush ../../Src/Utils/bush/bush.qrc -o ../../Build/bush/Win32/Develop/qrc_bush.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Src/Utils/bush/icons/bush.png;../../Src/Utils/bush/icons/gray.png;../../Src/Utils/bush/icons/green.png;../../Src/Utils/bush/icons/orange.png;../../Src/Utils/bush/icons/red.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/bush/Win32/Develop/qrc_bush.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"bush.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name bush ../../Src/Utils/bush/bush.qrc -o ../../Build/bush/Win32/Debug/qrc_bush.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Src/Utils/bush/icons/bush.png;../../Src/Utils/bush/icons/gray.png;../../Src/Utils/bush/icons/green.png;../../Src/Utils/bush/icons/orange.png;../../Src/Utils/bush/icons/red.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/bush/Win32/Debug/qrc_bush.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"bush.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name bush ../../Src/Utils/bush/bush.qrc -o ../../Build/bush/Win32/Release/qrc_bush.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Src/Utils/bush/icons/bush.png;../../Src/Utils/bush/icons/gray.png;../../Src/Utils/bush/icons/green.png;../../Src/Utils/bush/icons/orange.png;../../Src/Utils/bush/icons/red.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/bush/Win32/Release/qrc_bush.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\qrc_bush.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Src\Utils\bush\icons\bush.png" />
+    <None Include="..\..\Src\Utils\bush\icons\gray.png" />
+    <None Include="..\..\Src\Utils\bush\icons\green.png" />
+    <None Include="..\..\Src\Utils\bush\icons\orange.png" />
+    <None Include="..\..\Src\Utils\bush\icons\red.png" />
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Session.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_PingAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamCommAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_ProcessRunner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Context.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_AbstractConsole.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Console.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_VisualContext.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_RobotPool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_RobotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_ShortcutBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_CommandLineCompleter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\qrc_bush.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Session.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_PingAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamCommAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_ProcessRunner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Context.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_AbstractConsole.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Console.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_VisualContext.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_RobotPool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_RobotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_ShortcutBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_CommandLineCompleter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\qrc_bush.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Session.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_PingAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamCommAgent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_ProcessRunner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Context.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_AbstractConsole.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Console.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_VisualContext.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_RobotPool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_RobotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_ShortcutBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_CommandLineCompleter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include=".Qt">
+      <UniqueIdentifier>{26983797-AD25-9CBF-C563-C317038CED7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="images">
+      <UniqueIdentifier>{59B51417-4BFF-E4AE-402B-3D63AAD79FE0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtbuttonpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qteditorfactory.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtgroupboxpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertybrowserutils.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertymanager.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qttreepropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtvariantproperty.cpp" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.qrc" />
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Develop\qrc_qtpropertybrowser.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-arrow.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-busy.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-closedhand.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-cross.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-forbidden.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-hand.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-hsplit.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-ibeam.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-openhand.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeall.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeb.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizef.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeh.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizev.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-uparrow.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-vsplit.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-wait.png">
+      <Filter>images</Filter>
+    </None>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-whatsthis.png">
+      <Filter>images</Filter>
+    </None>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowserutils_p.h" />
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Develop\moc_qtpropertybrowserutils_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtbuttonpropertybrowser.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qteditorfactory.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtgroupboxpropertybrowser.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertymanager.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qttreepropertybrowser.h" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtvariantproperty.h" />
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Debug\qrc_qtpropertybrowser.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Debug\moc_qtpropertybrowserutils_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Release\qrc_qtpropertybrowser.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Release\moc_qtpropertybrowserutils_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

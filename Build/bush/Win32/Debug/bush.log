@@ -1,0 +1,211 @@
+﻿Build started 5/9/2014 4:50:14 PM.
+     1>Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\bush.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         "Session.h (Qt moc)"
+         "PingAgent.h (Qt moc)"
+         "TeamCommAgent.h (Qt moc)"
+         "AbstractConsole.h (Qt moc)"
+         "Context.h (Qt moc)"
+         "ProcessRunner.h (Qt moc)"
+         "CommandLineCompleter.h (Qt moc)"
+         "Console.h (Qt moc)"
+         "MainWindow.h (Qt moc)"
+         "RobotPool.h (Qt moc)"
+         "RobotView.h (Qt moc)"
+         "ShortcutBar.h (Qt moc)"
+         "TeamSelector.h (Qt moc)"
+         "TeamView.h (Qt moc)"
+         "VisualContext.h (Qt moc)"
+         "QtCore4.dll (copy)"
+                 1 file(s) copied.
+         "QtGui4.dll (copy)"
+                 1 file(s) copied.
+         "bush.qrc (Qt rcc)"
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../Src /I../../Src/Platform/Win32 /I../../Util/SimRobot/Util/qt/Win32/include /I../../Util/SimRobot/Util/qt/Win32/include/QtCore /I../../Util/SimRobot/Util/qt/Win32/include/QtGUI /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WIN32 /D _DEBUG /D TARGET_TOOL /D QT_NO_DEBUG /D QT_SHARED /D QT_GUI_LIB /D QT_CORE_LIB /D QT_NO_STL /D _CRT_SECURE_NO_DEPRECATE /GF /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"..\..\Build\bush\Win32\Debug\\" /Fd"..\..\Build\bush\Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Src\Utils\bush\bush.cpp ..\..\Src\Utils\bush\Initializer.cpp ..\..\Src\Utils\bush\Session.cpp ..\..\Src\Utils\bush\agents\PingAgent.cpp ..\..\Src\Utils\bush\agents\RemoteRobotAgent.cpp ..\..\Src\Utils\bush\agents\TeamCommAgent.cpp ..\..\Src\Utils\bush\bhwrapper\Framework.cpp ..\..\Src\Utils\bush\bhwrapper\TeamCommWrapper.cpp ..\..\Src\Utils\bush\cmdlib\AbstractConsole.cpp ..\..\Src\Utils\bush\cmdlib\CommandAdapter.cpp ..\..\Src\Utils\bush\cmdlib\Commands.cpp ..\..\Src\Utils\bush\cmdlib\Context.cpp ..\..\Src\Utils\bush\cmdlib\ProcessRunner.cpp ..\..\Src\Utils\bush\cmdlib\RobotCommand.cpp ..\..\Src\Utils\bush\cmds\ChangeWirelessCmd.cpp ..\..\Src\Utils\bush\cmds\CompileCmd.cpp ..\..\Src\Utils\bush\cmds\DebugRequestCmd.cpp ..\..\Src\Utils\bush\cmds\DeployCmd.cpp ..\..\Src\Utils\bush\cmds\DownloadLogsCmd.cpp ..\..\Src\Utils\bush\cmds\ExitCmd.cpp ..\..\Src\Utils\bush\cmds\HelpCmd.cpp ..\..\Src\Utils\bush\cmds\PingCmd.cpp ..\..\Src\Utils\bush\cmds\RestartCmd.cpp ..\..\Src\Utils\bush\cmds\SCPCmd.cpp ..\..\Src\Utils\bush\cmds\ShowCmd.cpp ..\..\Src\Utils\bush\cmds\ShutdownCmd.cpp ..\..\Src\Utils\bush\cmds\SSHCmd.cpp ..\..\Src\Utils\bush\cmds\UpdateSettingsCmd.cpp ..\..\Src\Utils\bush\cmds\UpdateWirelessCmd.cpp ..\..\Src\Utils\bush\models\Power.cpp ..\..\Src\Utils\bush\models\Robot.cpp ..\..\Src\Utils\bush\models\Team.cpp ..\..\Src\Utils\bush\tools\ConfigMap.cpp ..\..\Src\Utils\bush\tools\ConfigMapParser.cpp ..\..\Src\Utils\bush\tools\Filesystem.cpp ..\..\Src\Utils\bush\tools\Platform.cpp ..\..\Src\Utils\bush\tools\ShellTools.cpp ..\..\Src\Utils\bush\tools\StringTools.cpp ..\..\Src\Utils\bush\ui\CommandLineCompleter.cpp ..\..\Src\Utils\bush\ui\CommandLineEdit.cpp ..\..\Src\Utils\bush\ui\Console.cpp ..\..\Src\Utils\bush\ui\MainWindow.cpp ..\..\Src\Utils\bush\ui\RobotPool.cpp ..\..\Src\Utils\bush\ui\RobotView.cpp ..\..\Src\Utils\bush\ui\ShortcutBar.cpp ..\..\Src\Utils\bush\ui\TeamSelector.cpp ..\..\Src\Utils\bush\ui\TeamView.cpp ..\..\Src\Utils\bush\ui\VisualContext.cpp ..\..\Src\Platform\Win32\BHAssert.cpp ..\..\Src\Platform\Win32\Semaphore.cpp ..\..\Src\Platform\SimRobotQt\SystemCall.cpp ..\..\Src\Platform\Common\File.cpp ..\..\Src\Platform\Common\TcpComm.cpp ..\..\Src\Platform\Common\UdpComm.cpp ..\..\Src\Controller\Platform\Win32\Directory.cpp ..\..\Src\Tools\Enum.cpp ..\..\Src\Tools\Global.cpp ..\..\Src\Tools\Debugging\DebugDataTable.cpp ..\..\Src\Tools\Debugging\DebugRequest.cpp ..\..\Src\Tools\Debugging\TcpConnection.cpp ..\..\Src\Tools\Streams\InOut.cpp ..\..\Src\Tools\Streams\InStreams.cpp ..\..\Src\Tools\Streams\OutStreams.cpp ..\..\Src\Tools\Streams\SimpleMap.cpp ..\..\Src\Tools\Streams\Streamable.cpp ..\..\Src\Tools\Streams\StreamHandler.cpp ..\..\Src\Tools\MessageQueue\InMessage.cpp ..\..\Src\Tools\MessageQueue\MessageQueue.cpp ..\..\Src\Tools\MessageQueue\MessageQueueBase.cpp ..\..\Src\Tools\MessageQueue\OutMessage.cpp ..\..\Src\Tools\ProcessFramework\TeamHandler.cpp ..\..\Src\Tools\Settings.cpp ..\..\Build\bush\Win32\Debug\qrc_bush.cpp ..\..\Build\bush\Win32\Debug\moc_Session.cpp ..\..\Build\bush\Win32\Debug\moc_PingAgent.cpp ..\..\Build\bush\Win32\Debug\moc_TeamCommAgent.cpp ..\..\Build\bush\Win32\Debug\moc_ProcessRunner.cpp ..\..\Build\bush\Win32\Debug\moc_Context.cpp ..\..\Build\bush\Win32\Debug\moc_AbstractConsole.cpp ..\..\Build\bush\Win32\Debug\moc_Console.cpp ..\..\Build\bush\Win32\Debug\moc_VisualContext.cpp ..\..\Build\bush\Win32\Debug\moc_MainWindow.cpp ..\..\Build\bush\Win32\Debug\moc_RobotPool.cpp ..\..\Build\bush\Win32\Debug\moc_RobotView.cpp ..\..\Build\bush\Win32\Debug\moc_ShortcutBar.cpp ..\..\Build\bush\Win32\Debug\moc_TeamSelector.cpp ..\..\Build\bush\Win32\Debug\moc_TeamView.cpp ..\..\Build\bush\Win32\Debug\moc_CommandLineCompleter.cpp
+         bush.cpp
+         Initializer.cpp
+         Session.cpp
+         PingAgent.cpp
+         RemoteRobotAgent.cpp
+         TeamCommAgent.cpp
+         Framework.cpp
+         TeamCommWrapper.cpp
+         AbstractConsole.cpp
+         CommandAdapter.cpp
+         Commands.cpp
+         Context.cpp
+         ProcessRunner.cpp
+         RobotCommand.cpp
+         ChangeWirelessCmd.cpp
+         CompileCmd.cpp
+         DebugRequestCmd.cpp
+         DeployCmd.cpp
+         DownloadLogsCmd.cpp
+         ExitCmd.cpp
+         HelpCmd.cpp
+         PingCmd.cpp
+         RestartCmd.cpp
+         SCPCmd.cpp
+         ShowCmd.cpp
+         ShutdownCmd.cpp
+         SSHCmd.cpp
+         UpdateSettingsCmd.cpp
+         UpdateWirelessCmd.cpp
+         Power.cpp
+         Robot.cpp
+         Team.cpp
+         ConfigMap.cpp
+         ConfigMapParser.cpp
+         Filesystem.cpp
+         Platform.cpp
+         ShellTools.cpp
+         StringTools.cpp
+         CommandLineCompleter.cpp
+         CommandLineEdit.cpp
+         Console.cpp
+         MainWindow.cpp
+         RobotPool.cpp
+         RobotView.cpp
+         ShortcutBar.cpp
+         TeamSelector.cpp
+         TeamView.cpp
+         VisualContext.cpp
+         BHAssert.cpp
+         Semaphore.cpp
+         SystemCall.cpp
+         File.cpp
+         TcpComm.cpp
+         UdpComm.cpp
+         Directory.cpp
+         Enum.cpp
+         Global.cpp
+         DebugDataTable.cpp
+         DebugRequest.cpp
+         TcpConnection.cpp
+         InOut.cpp
+         InStreams.cpp
+         OutStreams.cpp
+         SimpleMap.cpp
+         Streamable.cpp
+         StreamHandler.cpp
+         InMessage.cpp
+         MessageQueue.cpp
+         MessageQueueBase.cpp
+         OutMessage.cpp
+         TeamHandler.cpp
+         Settings.cpp
+         qrc_bush.cpp
+         moc_Session.cpp
+         moc_PingAgent.cpp
+         moc_TeamCommAgent.cpp
+         moc_ProcessRunner.cpp
+         moc_Context.cpp
+         moc_AbstractConsole.cpp
+         moc_Console.cpp
+         moc_VisualContext.cpp
+         moc_MainWindow.cpp
+         moc_RobotPool.cpp
+         moc_RobotView.cpp
+         moc_ShortcutBar.cpp
+         moc_TeamSelector.cpp
+         moc_TeamView.cpp
+         moc_CommandLineCompleter.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D WIN32 /D _WIN32 /D _DEBUG /D TARGET_TOOL /D QT_NO_DEBUG /D QT_SHARED /D QT_GUI_LIB /D QT_CORE_LIB /D QT_NO_STL /D _CRT_SECURE_NO_DEPRECATE /l"0x0409" /nologo /fo"..\..\Build\bush\Win32\Debug\bush.res" ..\..\Src\Utils\bush\bush.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Build\bush\Win32\Debug\bush.exe" /INCREMENTAL /NOLOGO /LIBPATH:../../Util/SimRobot/Util/qt/Win32/lib qtmain.lib QtGui4.lib QtCore4.lib ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\Build\bush\Win32\Debug\bush.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Build\bush\Win32\Debug\bush.lib" /MACHINE:X86 /NODEFAULTLIB:msvcrt.lib ..\..\Build\bush\Win32\Debug\bush.res
+         ..\..\Build\bush\Win32\Debug\bush.obj
+         ..\..\Build\bush\Win32\Debug\Initializer.obj
+         ..\..\Build\bush\Win32\Debug\Session.obj
+         ..\..\Build\bush\Win32\Debug\PingAgent.obj
+         ..\..\Build\bush\Win32\Debug\RemoteRobotAgent.obj
+         ..\..\Build\bush\Win32\Debug\TeamCommAgent.obj
+         ..\..\Build\bush\Win32\Debug\Framework.obj
+         ..\..\Build\bush\Win32\Debug\TeamCommWrapper.obj
+         ..\..\Build\bush\Win32\Debug\AbstractConsole.obj
+         ..\..\Build\bush\Win32\Debug\CommandAdapter.obj
+         ..\..\Build\bush\Win32\Debug\Commands.obj
+         ..\..\Build\bush\Win32\Debug\Context.obj
+         ..\..\Build\bush\Win32\Debug\ProcessRunner.obj
+         ..\..\Build\bush\Win32\Debug\RobotCommand.obj
+         ..\..\Build\bush\Win32\Debug\ChangeWirelessCmd.obj
+         ..\..\Build\bush\Win32\Debug\CompileCmd.obj
+         ..\..\Build\bush\Win32\Debug\DebugRequestCmd.obj
+         ..\..\Build\bush\Win32\Debug\DeployCmd.obj
+         ..\..\Build\bush\Win32\Debug\DownloadLogsCmd.obj
+         ..\..\Build\bush\Win32\Debug\ExitCmd.obj
+         ..\..\Build\bush\Win32\Debug\HelpCmd.obj
+         ..\..\Build\bush\Win32\Debug\PingCmd.obj
+         ..\..\Build\bush\Win32\Debug\RestartCmd.obj
+         ..\..\Build\bush\Win32\Debug\SCPCmd.obj
+         ..\..\Build\bush\Win32\Debug\ShowCmd.obj
+         ..\..\Build\bush\Win32\Debug\ShutdownCmd.obj
+         ..\..\Build\bush\Win32\Debug\SSHCmd.obj
+         ..\..\Build\bush\Win32\Debug\UpdateSettingsCmd.obj
+         ..\..\Build\bush\Win32\Debug\UpdateWirelessCmd.obj
+         ..\..\Build\bush\Win32\Debug\Power.obj
+         ..\..\Build\bush\Win32\Debug\Robot.obj
+         ..\..\Build\bush\Win32\Debug\Team.obj
+         ..\..\Build\bush\Win32\Debug\ConfigMap.obj
+         ..\..\Build\bush\Win32\Debug\ConfigMapParser.obj
+         ..\..\Build\bush\Win32\Debug\Filesystem.obj
+         ..\..\Build\bush\Win32\Debug\Platform.obj
+         ..\..\Build\bush\Win32\Debug\ShellTools.obj
+         ..\..\Build\bush\Win32\Debug\StringTools.obj
+         ..\..\Build\bush\Win32\Debug\CommandLineCompleter.obj
+         ..\..\Build\bush\Win32\Debug\CommandLineEdit.obj
+         ..\..\Build\bush\Win32\Debug\Console.obj
+         ..\..\Build\bush\Win32\Debug\MainWindow.obj
+         ..\..\Build\bush\Win32\Debug\RobotPool.obj
+         ..\..\Build\bush\Win32\Debug\RobotView.obj
+         ..\..\Build\bush\Win32\Debug\ShortcutBar.obj
+         ..\..\Build\bush\Win32\Debug\TeamSelector.obj
+         ..\..\Build\bush\Win32\Debug\TeamView.obj
+         ..\..\Build\bush\Win32\Debug\VisualContext.obj
+         ..\..\Build\bush\Win32\Debug\BHAssert.obj
+         ..\..\Build\bush\Win32\Debug\Semaphore.obj
+         ..\..\Build\bush\Win32\Debug\SystemCall.obj
+         ..\..\Build\bush\Win32\Debug\File.obj
+         ..\..\Build\bush\Win32\Debug\TcpComm.obj
+         ..\..\Build\bush\Win32\Debug\UdpComm.obj
+         ..\..\Build\bush\Win32\Debug\Directory.obj
+         ..\..\Build\bush\Win32\Debug\Enum.obj
+         ..\..\Build\bush\Win32\Debug\Global.obj
+         ..\..\Build\bush\Win32\Debug\DebugDataTable.obj
+         ..\..\Build\bush\Win32\Debug\DebugRequest.obj
+         ..\..\Build\bush\Win32\Debug\TcpConnection.obj
+         ..\..\Build\bush\Win32\Debug\InOut.obj
+         ..\..\Build\bush\Win32\Debug\InStreams.obj
+         ..\..\Build\bush\Win32\Debug\OutStreams.obj
+         ..\..\Build\bush\Win32\Debug\SimpleMap.obj
+         ..\..\Build\bush\Win32\Debug\Streamable.obj
+         ..\..\Build\bush\Win32\Debug\StreamHandler.obj
+         ..\..\Build\bush\Win32\Debug\InMessage.obj
+         ..\..\Build\bush\Win32\Debug\MessageQueue.obj
+         ..\..\Build\bush\Win32\Debug\MessageQueueBase.obj
+         ..\..\Build\bush\Win32\Debug\OutMessage.obj
+         ..\..\Build\bush\Win32\Debug\TeamHandler.obj
+         ..\..\Build\bush\Win32\Debug\Settings.obj
+         ..\..\Build\bush\Win32\Debug\qrc_bush.obj
+         ..\..\Build\bush\Win32\Debug\moc_Session.obj
+         ..\..\Build\bush\Win32\Debug\moc_PingAgent.obj
+         ..\..\Build\bush\Win32\Debug\moc_TeamCommAgent.obj
+         ..\..\Build\bush\Win32\Debug\moc_ProcessRunner.obj
+         ..\..\Build\bush\Win32\Debug\moc_Context.obj
+         ..\..\Build\bush\Win32\Debug\moc_AbstractConsole.obj
+         ..\..\Build\bush\Win32\Debug\moc_Console.obj
+         ..\..\Build\bush\Win32\Debug\moc_VisualContext.obj
+         ..\..\Build\bush\Win32\Debug\moc_MainWindow.obj
+         ..\..\Build\bush\Win32\Debug\moc_RobotPool.obj
+         ..\..\Build\bush\Win32\Debug\moc_RobotView.obj
+         ..\..\Build\bush\Win32\Debug\moc_ShortcutBar.obj
+         ..\..\Build\bush\Win32\Debug\moc_TeamSelector.obj
+         ..\..\Build\bush\Win32\Debug\moc_TeamView.obj
+         ..\..\Build\bush\Win32\Debug\moc_CommandLineCompleter.obj
+         bush.vcxproj -> C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\..\..\Build\bush\Win32\Debug\bush.exe
+     1>Done Building Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\bush.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:36.89

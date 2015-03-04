@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include=".Qt">
+      <UniqueIdentifier>{26983797-AD25-9CBF-C563-C317038CED7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\libqxt\qxtspanslider.cpp" />
+    <CustomBuild Include="..\..\Util\libqxt\qxtspanslider.h" />
+    <CustomBuild Include="..\..\Util\libqxt\qxtspanslider_p.h" />
+    <ClCompile Include="..\..\Build\libqxt\Win32\Develop\moc_qxtspanslider.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\libqxt\Win32\Develop\moc_qxtspanslider_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\libqxt\Win32\Debug\moc_qxtspanslider.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\libqxt\Win32\Debug\moc_qxtspanslider_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\libqxt\Win32\Release\moc_qxtspanslider.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\libqxt\Win32\Release\moc_qxtspanslider_p.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

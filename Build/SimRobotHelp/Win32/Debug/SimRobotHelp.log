@@ -1,0 +1,9 @@
+﻿Build started 5/9/2014 12:48:13 PM.
+     1>Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\SimRobotHelp.vcxproj" on node 3 (Build target(s)).
+     1>Link:
+         SimRobotHelp.vcxproj -> C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\..\..\Build\SimRobotHelp\Win32\Debug\SimRobotHelp.dll
+     1>Done Building Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\SimRobotHelp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.13

@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{BF17AC14-9E2E-7A53-0C67-7E9BD51D3FD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl">
+      <UniqueIdentifier>{329935E4-4FAB-029D-EA29-B877FF17A85C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013">
+      <UniqueIdentifier>{2854E17A-F9F9-8DC1-687F-BB6A14F9F4F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Libraries">
+      <UniqueIdentifier>{86258B2C-2D2C-89DC-63B6-0F9B93819BE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\CameraControlEngine">
+      <UniqueIdentifier>{A99EE1BC-B9C2-8C9B-F779-EBCC25309F04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\LEDHandler">
+      <UniqueIdentifier>{790ECA39-8FFE-5AB5-50EC-0CB6096AEB45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\ManualHeadMotionProvider">
+      <UniqueIdentifier>{633AB6C8-757E-8601-0993-E52FEFAAF073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Configuration">
+      <UniqueIdentifier>{043E5B71-0161-F82F-5FED-E892A1A43D4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Infrastructure">
+      <UniqueIdentifier>{30096319-EC57-2800-9915-1DEA1109D78E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling">
+      <UniqueIdentifier>{3DB3BB04-B904-DE73-FDBE-22E98CF8C3DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\BallLocator">
+      <UniqueIdentifier>{A19DB951-EE0E-B9D4-51FB-C56A23D10A63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\CombinedWorldModelProvider">
+      <UniqueIdentifier>{59846207-9634-A532-3A07-5BB5ED6BD3EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\FieldCoverageProvider">
+      <UniqueIdentifier>{8C24B7EB-67BB-1520-FE00-35194AE6630B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\FreePartOfOpponentGoalProvider">
+      <UniqueIdentifier>{7CF8511C-6551-23B0-9D5A-BAF031DA6F1E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\GlobalFieldCoverageProvider">
+      <UniqueIdentifier>{C14756E5-F024-8D3A-001B-58E956C89F75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\ObstacleModelProvider">
+      <UniqueIdentifier>{6A10D57C-6321-965E-3E4E-6FFA87E026DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\OdometerProvider">
+      <UniqueIdentifier>{DEEDAF44-004F-A5E8-C2DA-24CB203648C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\OdometryOnlySelfLocator">
+      <UniqueIdentifier>{FF74B61E-CFA4-79A6-F3FA-2840E61959FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\OwnSideModelProvider">
+      <UniqueIdentifier>{7C847382-1EE7-B500-B97D-BBAE132AE40B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\SelfLocator">
+      <UniqueIdentifier>{4A038B12-9967-C0B0-1491-830CC3F22AFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\SideConfidenceProvider">
+      <UniqueIdentifier>{1DF131E8-41BF-0DBB-FA07-8CCAF12E1BBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Modeling\USObstacleModelProvider">
+      <UniqueIdentifier>{3E3DFF08-B68D-3136-FB41-2F6142AF7562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\MotionControl">
+      <UniqueIdentifier>{94C6A8A6-D4AE-4631-8FC3-F2FDEFA935EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\MotionControl\Indykick">
+      <UniqueIdentifier>{A5DA14A0-E831-3532-C918-DF18C63E9076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\MotionControl\WalkingEngine">
+      <UniqueIdentifier>{2E5F3556-96A0-49D0-D803-D5785C7C45EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Perception">
+      <UniqueIdentifier>{2CDF401A-8A17-DB6D-0740-02C1537CA918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Sensing">
+      <UniqueIdentifier>{B0BFD586-3B09-5D36-DB4D-40761BBA53EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options">
+      <UniqueIdentifier>{677CE723-A6E8-377A-AEE9-19F80D5F68C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\GameControl">
+      <UniqueIdentifier>{10936E5B-4C21-34BD-F4B3-A35E5C10145A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl">
+      <UniqueIdentifier>{51C09F38-8D34-ACA3-673B-8A69235B82BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Output">
+      <UniqueIdentifier>{AAC50D16-55F1-9BCB-1704-A1A69F37B875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest">
+      <UniqueIdentifier>{5DD04CFB-3CB6-EC68-527A-3C6ABBB986B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest">
+      <UniqueIdentifier>{7B963E48-0355-68B0-38E0-543F6EC2050A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest">
+      <UniqueIdentifier>{D707C83C-9BAE-E07C-F934-617D264070B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Roles">
+      <UniqueIdentifier>{8E0B0314-D526-99F3-8A3E-EC4498CB7DE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Skills">
+      <UniqueIdentifier>{233FD478-308D-4EE1-195A-6DB6B7753268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\BehaviorControl\BehaviorControl2013\Options\Tools">
+      <UniqueIdentifier>{07DFC0E9-7E69-EB8F-ADE2-CD21D8D612F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{419F3742-E6DE-8E0E-C4B2-2CCE005E7630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Common">
+      <UniqueIdentifier>{C2B03CD2-93E5-0438-A570-D5E91030C612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\SimRobotQt">
+      <UniqueIdentifier>{56397015-0536-33DC-06A3-D58553BAB58B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win32">
+      <UniqueIdentifier>{3B3C6F7B-614B-F9D0-5C91-5018611E7D80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Processes">
+      <UniqueIdentifier>{77EA79B4-B263-8F14-6BF0-2EA6DC076006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations">
+      <UniqueIdentifier>{09697F98-6474-02AA-6F39-BB57860BEADE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Configuration">
+      <UniqueIdentifier>{E6093728-448E-4CE0-FBEC-B9B1A6E41042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Infrastructure">
+      <UniqueIdentifier>{F2B50C19-B237-F04F-2A05-D5C913BE1B9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Modeling">
+      <UniqueIdentifier>{A1201FC9-14D5-B25C-B6D9-AFA8EF5E0570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\MotionControl">
+      <UniqueIdentifier>{BFCC7995-34AA-AFAC-D0E6-DCAF4B8B257B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Perception">
+      <UniqueIdentifier>{B61D2035-011C-795C-9F4E-6B7CAB498151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Sensing">
+      <UniqueIdentifier>{7ADF383C-2BA7-2960-D108-750619AC43B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\BehaviorControl">
+      <UniqueIdentifier>{7A918921-0918-3AD6-5E04-D088694B45A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\Infrastructure\Legacy">
+      <UniqueIdentifier>{99558B61-3980-C050-3B21-B29FF0D91591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{8625E1DE-7BE1-4C39-B1D1-4DC03D822497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\BodyDynamics">
+      <UniqueIdentifier>{AC09C9FC-0E82-AD74-9E7E-C9EC50E0E21E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Debugging">
+      <UniqueIdentifier>{2FFDFB8A-814E-F889-69E9-A00FEB0D4BBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Math">
+      <UniqueIdentifier>{66C21A95-FD18-A8D1-AE80-63C528EEBBA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\MessageQueue">
+      <UniqueIdentifier>{E1812494-E2AB-4328-ACA3-6B15EAB333AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Module">
+      <UniqueIdentifier>{DDCC6177-A4B7-9A4A-68FC-7DAEA4DB541D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Optimization">
+      <UniqueIdentifier>{F30AC45C-19F6-FF23-7680-40582B2FACB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ProcessFramework">
+      <UniqueIdentifier>{A7DE6B24-C0D6-E933-A1F2-2A46FE73A534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Streams">
+      <UniqueIdentifier>{E9D7DD25-3161-EEA4-DC07-BF5F6F596D42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ImageProcessing">
+      <UniqueIdentifier>{09BF3E13-4484-C361-742C-954A2A4DE67C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\BehaviorControl2013.cpp">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries.cpp">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\LibraryBase.cpp">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries\LibCodeRelease.cpp">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\CameraControlEngine\CameraControlEngine.cpp">
+      <Filter>Modules\BehaviorControl\CameraControlEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\LEDHandler\LEDHandler.cpp">
+      <Filter>Modules\BehaviorControl\LEDHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\ManualHeadMotionProvider\ManualHeadMotionProvider.cpp">
+      <Filter>Modules\BehaviorControl\ManualHeadMotionProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\CameraCalibrator.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\CameraCalibratorV4.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\CognitionConfigurationDataProvider.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\FrictionLearner.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\JointCalibrator.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Configuration\MotionConfigurationDataProvider.cpp">
+      <Filter>Modules\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\CameraProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\CognitionLogDataProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\LogConverter.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\MotionLogDataProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\MotionRobotHealthProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\NaoProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\RobotHealthProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\TeamDataProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\TeamDataSender.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\ThumbnailProvider.cpp">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\BallLocator\BallLocator.cpp">
+      <Filter>Modules\Modeling\BallLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\CombinedWorldModelProvider\CombinedWorldModelProvider.cpp">
+      <Filter>Modules\Modeling\CombinedWorldModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\FieldCoverageProvider\FieldCoverageProvider.cpp">
+      <Filter>Modules\Modeling\FieldCoverageProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\FreePartOfOpponentGoalProvider\LineBasedFreePartOfOpponentGoalProvider.cpp">
+      <Filter>Modules\Modeling\FreePartOfOpponentGoalProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\GlobalFieldCoverageProvider\GlobalFieldCoverageProvider.cpp">
+      <Filter>Modules\Modeling\GlobalFieldCoverageProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleClusterer.cpp">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleCombinator.cpp">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleWheelProvider.cpp">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\OdometerProvider\OdometerProvider.cpp">
+      <Filter>Modules\Modeling\OdometerProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\OdometryOnlySelfLocator\OdometryOnlySelfLocator.cpp">
+      <Filter>Modules\Modeling\OdometryOnlySelfLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\OwnSideModelProvider\OwnSideModelProvider.cpp">
+      <Filter>Modules\Modeling\OwnSideModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\FieldModel.cpp">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocator.cpp">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\TemplateGenerator.cpp">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\UKFSample.cpp">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\SideConfidenceProvider\TemporarySideConfidenceProvider.cpp">
+      <Filter>Modules\Modeling\SideConfidenceProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\EvidenceGrid.cpp">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\Grid.cpp">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\USObstacleModelProvider.cpp">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\ArmMotionEngine.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BallTaking.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BIKEParameters.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BLAME.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BlameData.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\GetUpEngine.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\HeadMotionEngine.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\MotionCombinator.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\MotionSelector.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\SpecialActions.cpp">
+      <Filter>Modules\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BezierBase.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BKick.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BKickBase.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BSplineGenerator.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\CartTableController.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\FrontContour.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\IndykickEngine.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\ShellLimits.cpp">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngine.cpp">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineDrawings.cpp">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineKicks.cpp">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineTools.cpp">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\BallPerceptor.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\BodyContourProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\CameraMatrixProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\ColorProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\CoordinateSystemProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\FieldBoundaryProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\GoalPerceptor.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\LinePerceptor.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\ObstacleSpotProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\PointExplorer.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\PossibleObstacleSpotProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\RegionAnalyzer.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\Regionizer.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Perception\RobotCameraMatrixProvider.cpp">
+      <Filter>Modules\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\ArmContactModelProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\ExpInertiaSensorFilter3D.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\FallDownStateDetector.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\FootContactModelProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\FsrDataProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\FsrZmpProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\GroundContactDetector.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\InertiaSensorCalibrator.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\InertiaSensorFilter.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\JointDynamicsProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\JointFilter.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\RobotModelProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\SensorFilter.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\TorsoMatrixProvider.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Modules\Sensing\USControl.cpp">
+      <Filter>Modules\Sensing</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\BehaviorControl2013.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Cabsl.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\LibraryBase.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries\LibCodeRelease.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Soccer.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\HandleGameState.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\GameControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\HandlePenaltyState.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\GameControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\PlayingState.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\GameControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\ReadyState.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\GameControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\HeadControl.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\LookForward.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\LookLeft.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\Scan.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\PlaySound.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest\Arm.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest\Arms.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadPanTilt.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadTarget.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadTargetOnGround.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\GetUpEngine.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\InWalkKick.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\SpecialAction.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\Stand.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkAtSpeed.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkAtSpeedPercentage.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkToTarget.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Defender.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Goalie.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Striker.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Skills\GetUp.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Tools\ButtonPressedAndReleased.h">
+      <Filter>Modules\BehaviorControl\BehaviorControl2013\Options\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\CameraControlEngine\CameraControlEngine.h">
+      <Filter>Modules\BehaviorControl\CameraControlEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\LEDHandler\LEDHandler.h">
+      <Filter>Modules\BehaviorControl\LEDHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\ManualHeadMotionProvider\ManualHeadMotionProvider.h">
+      <Filter>Modules\BehaviorControl\ManualHeadMotionProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\CameraCalibrator.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\CameraCalibratorV4.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\CognitionConfigurationDataProvider.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\FrictionLearner.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\JointCalibrator.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Configuration\MotionConfigurationDataProvider.h">
+      <Filter>Modules\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\CameraProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\CognitionLogDataProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\LogConverter.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\LogDataProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\MotionLogDataProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\MotionRobotHealthProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\NaoProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\RobotHealthProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\TeamDataProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\TeamDataSender.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\ThumbnailProvider.h">
+      <Filter>Modules\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\BallLocator\BallLocator.h">
+      <Filter>Modules\Modeling\BallLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\CombinedWorldModelProvider\CombinedWorldModelProvider.h">
+      <Filter>Modules\Modeling\CombinedWorldModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\FieldCoverageProvider\FieldCoverageProvider.h">
+      <Filter>Modules\Modeling\FieldCoverageProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\FreePartOfOpponentGoalProvider\LineBasedFreePartOfOpponentGoalProvider.h">
+      <Filter>Modules\Modeling\FreePartOfOpponentGoalProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\GlobalFieldCoverageProvider\GlobalFieldCoverageProvider.h">
+      <Filter>Modules\Modeling\GlobalFieldCoverageProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleClusterer.h">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleCombinator.h">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleWheelProvider.h">
+      <Filter>Modules\Modeling\ObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\OdometerProvider\OdometerProvider.h">
+      <Filter>Modules\Modeling\OdometerProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\OdometryOnlySelfLocator\OdometryOnlySelfLocator.h">
+      <Filter>Modules\Modeling\OdometryOnlySelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\OwnSideModelProvider\OwnSideModelProvider.h">
+      <Filter>Modules\Modeling\OwnSideModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\FieldModel.h">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocator.h">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocatorParameters.h">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\TemplateGenerator.h">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\UKFSample.h">
+      <Filter>Modules\Modeling\SelfLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\SideConfidenceProvider\TemporarySideConfidenceProvider.h">
+      <Filter>Modules\Modeling\SideConfidenceProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\EvidenceGrid.h">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\Grid.h">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\USObstacleModelProvider.h">
+      <Filter>Modules\Modeling\USObstacleModelProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\ArmMotion.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\ArmMotionEngine.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BallTaking.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BIKEParameters.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BLAME.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BlameData.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\GetUpEngine.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\HeadMotionEngine.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\MotionCombinator.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\MotionSelector.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\SpecialActions.h">
+      <Filter>Modules\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BezierBase.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BKick.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BKickBase.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BSplineGenerator.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\CartTableController.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\FrontContour.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\IndykickEngine.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\ShellLimits.h">
+      <Filter>Modules\MotionControl\Indykick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\SubPhaseParameters.h">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngine.h">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineKicks.h">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineTools.h">
+      <Filter>Modules\MotionControl\WalkingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\BallPerceptor.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\BodyContourProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\CameraMatrixProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\ColorProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\CoordinateSystemProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\FieldBoundaryProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\GoalPerceptor.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\LinePerceptor.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\ObstacleSpotProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\PointExplorer.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\PossibleObstacleSpotProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\RegionAnalyzer.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\Regionizer.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Perception\RobotCameraMatrixProvider.h">
+      <Filter>Modules\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\ArmContactModelProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\ExpInertiaSensorFilter3D.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\FallDownStateDetector.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\FootContactModelProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\FsrDataProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\FsrZmpProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\GroundContactDetector.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\InertiaSensorCalibrator.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\InertiaSensorFilter.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\JointDynamicsProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\JointFilter.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\RobotModelProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\SensorFilter.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\TorsoMatrixProvider.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Modules\Sensing\USControl.h">
+      <Filter>Modules\Sensing</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Platform\Common\File.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Common\TcpComm.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Common\UdpComm.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\Robot.cpp">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\SystemCall.cpp">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Win32\BHAssert.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Win32\Semaphore.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Win32\SoundPlayer.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\BHAssert.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Camera.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\DebugHandler.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\File.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Semaphore.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\SystemCall.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\TcpComm.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Thread.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\UdpComm.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Common\File.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Common\TcpComm.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Common\UdpComm.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\Robot.h">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\SystemCall.h">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\BHAssert.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\Semaphore.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\SoundPlayer.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\StreamableHelper.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\Thread.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Processes\Cognition.cpp">
+      <Filter>Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Processes\Debug.cpp">
+      <Filter>Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Processes\Motion.cpp">
+      <Filter>Processes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Processes\Cognition.h">
+      <Filter>Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Processes\Debug.h">
+      <Filter>Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Processes\Motion.h">
+      <Filter>Processes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Representations\Blackboard.cpp">
+      <Filter>Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Configuration\CameraSettings.cpp">
+      <Filter>Representations\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Configuration\FieldDimensions.cpp">
+      <Filter>Representations\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Configuration\HeadLimits.cpp">
+      <Filter>Representations\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\CameraInfo.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\GameInfo.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\Image.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\RobotInfo.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\TeamInfo.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\TeamMateData.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\Thumbnail.cpp">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\BallModel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\CombinedWorldModel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\FieldCoverage.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\FreePartOfOpponentGoalModel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\GlobalFieldCoverage.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleClusters.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleModel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleWheel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\RobotPose.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Modeling\RobotsModel.cpp">
+      <Filter>Representations\Modeling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\MotionControl\BikeRequest.cpp">
+      <Filter>Representations\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\MotionControl\MotionRequest.cpp">
+      <Filter>Representations\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.cpp">
+      <Filter>Representations\MotionControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\BallPercept.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\BodyContour.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\CameraMatrix.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\ColorReference.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\FieldBoundary.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\GoalPercept.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\ImageCoordinateSystem.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\JPEGImage.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\LinePercept.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Perception\RegionPercept.cpp">
+      <Filter>Representations\Perception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Sensing\BodyDynamics.cpp">
+      <Filter>Representations\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Sensing\FallDownState.cpp">
+      <Filter>Representations\Sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Representations\Sensing\RobotModel.cpp">
+      <Filter>Representations\Sensing</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Representations\Blackboard.h">
+      <Filter>Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\ActivationGraph.h">
+      <Filter>Representations\BehaviorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorControlOutput.h">
+      <Filter>Representations\BehaviorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorLEDRequest.h">
+      <Filter>Representations\BehaviorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorStatus.h">
+      <Filter>Representations\BehaviorControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\CameraCalibration.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\CameraSettings.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\DamageConfiguration.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\FieldDimensions.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\HeadLimits.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\JointCalibration.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\MassCalibration.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\RobotDimensions.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Configuration\SensorCalibration.h">
+      <Filter>Representations\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\CameraInfo.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\FrameInfo.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\GameInfo.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Image.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\JointData.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\JointDataDeg.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\KeyStates.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\LEDRequest.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RoboCupGameControlData.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RobotHealth.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RobotInfo.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\SensorData.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\TeamInfo.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\TeamMateData.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Thumbnail.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\USRequest.h">
+      <Filter>Representations\Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\FrameInfo_83e22.h">
+      <Filter>Representations\Infrastructure\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\JointData_d198df791237.h">
+      <Filter>Representations\Infrastructure\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\SensorDataRev5703.h">
+      <Filter>Representations\Infrastructure\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\SensorData_2d284.h">
+      <Filter>Representations\Infrastructure\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\BallModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\CombinedWorldModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\FieldCoverage.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\FreePartOfOpponentGoalModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\GlobalFieldCoverage.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleClusters.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleWheel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\Odometer.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\OwnSideModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\RobotPose.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\RobotsModel.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Modeling\SideConfidence.h">
+      <Filter>Representations\Modeling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\ArmMotionEngineOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\ArmMotionRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BallTakingOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BikeEngineOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BikeRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\GetUpEngineOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadAngleRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadJointRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadMotionRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\IndykickEngineOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\IndykickRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionInfo.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionSelection.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\OdometryData.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\SpecialActionsOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\WalkingEngineOutput.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\WalkRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\BallPercept.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\BallSpot.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\BallSpots.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\BodyContour.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\CameraMatrix.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\ColorReference.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\FieldBoundary.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\GoalPercept.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\ImageCoordinateSystem.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\JPEGImage.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\LinePercept.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\LineSpots.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\ObstacleSpots.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\PossibleObstacleSpots.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\RegionPercept.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Perception\RobotPercept.h">
+      <Filter>Representations\Perception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\ArmContactModel.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\BodyDynamics.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\FallDownState.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\FootContactModel.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\FsrData.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\FsrZmp.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\GroundContactState.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\InertiaSensorData.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\JointDynamics.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\OrientationData.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\RobotBalance.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\RobotModel.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Representations\Sensing\TorsoMatrix.h">
+      <Filter>Representations\Sensing</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Enum.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Global.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\NTP.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\PathFinder.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Settings.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\BodyDynamics\BodyDynamicsProviderDelegate.cpp">
+      <Filter>Tools\BodyDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\CognitionLogger.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataStreamer.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataTable.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDrawings.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugRequest.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\QueueFillRequest.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\TcpConnection.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Debugging\TimingManager.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\Differentiator.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution2D.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution3D.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\Geometry.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\Matrix.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\MVTools.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\Pose2D.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Math\RotationMatrix.cpp">
+      <Filter>Tools\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\InMessage.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueue.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\OutMessage.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Module\Module.cpp">
+      <Filter>Tools\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Module\ModuleManager.cpp">
+      <Filter>Tools\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Optimization\DownhillSimplex.cpp">
+      <Filter>Tools\Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Optimization\ParticleSwarm.cpp">
+      <Filter>Tools\Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Process.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\ProcessFramework.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Receiver.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Sender.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\TeamHandler.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\InOut.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\InStreams.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\OutStreams.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\SimpleMap.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\Streamable.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\StreamHandler.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Boundary.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ColorClasses.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ConvexHull.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Enum.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ForwardKinematic.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Global.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\InverseKinematic.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MMX.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\NTP.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\PathFinder.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Range.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\RingBuffer.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\RingBufferWithSum.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\SampleSet.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Settings.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Team.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\BodyDynamics\BodyDynamicsProviderDelegate.h">
+      <Filter>Tools\BodyDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\BodyDynamics\InverseDynamics.h">
+      <Filter>Tools\BodyDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\Asserts.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\CognitionLogger.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataStreamer.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataTable.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDrawings.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDrawings3D.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\Debugging.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugImages.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugRequest.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DrawingHelpers.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\LogFileFormat.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\Modify.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\QueueFillRequest.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\Stopwatch.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\TcpConnection.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Debugging\TimingManager.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ImageProcessing\ColorModelConversions.h">
+      <Filter>Tools\ImageProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Approx.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Common.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Covariance.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\CurveFitting.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Differentiator.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution2D.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution3D.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianTable.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Geometry.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Kalman.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix2x2.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix3x3.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\MVTools.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Pose2D.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Pose3D.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Probabilistics.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Random.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\RotationMatrix.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialInertia.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialInertiaDerivative.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialTransform.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialVector.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Vector.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Vector2.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\Vector3.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Math\YaMatrix.h">
+      <Filter>Tools\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\InMessage.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageIDs.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueue.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\OutMessage.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Module\Module.h">
+      <Filter>Tools\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Module\ModuleManager.h">
+      <Filter>Tools\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Module\ModulePackage.h">
+      <Filter>Tools\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Optimization\DownhillSimplex.h">
+      <Filter>Tools\Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Optimization\HillClimbing.h">
+      <Filter>Tools\Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Optimization\ParticleSwarm.h">
+      <Filter>Tools\Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\PlatformProcess.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Process.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\ProcessFramework.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Receiver.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Sender.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\TeamHandler.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\AutoStreamable.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\InOut.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\InStreams.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\OutStreams.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\SimpleMap.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\Streamable.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\StreamHandler.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

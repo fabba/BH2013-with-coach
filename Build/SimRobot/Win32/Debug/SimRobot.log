@@ -1,0 +1,12 @@
+﻿Build started 5/10/2014 3:31:19 PM.
+     1>Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\SimRobot.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         "SimulatedNao.dll (copy)"
+                 1 file(s) copied.
+       Link:
+         SimRobot.vcxproj -> C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\..\..\Build\SimRobot\Win32\Debug\SimRobot.exe
+     1>Done Building Project "C:\Users\fabian\AfstudeerProject\BHuman2013-master\Make\VS2012\SimRobot.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.48

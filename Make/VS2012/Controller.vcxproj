@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Controller</ProjectName>
+    <ProjectGuid>{6CA93CAF-FA50-8F4E-ABF1-8585D3710D0F}</ProjectGuid>
+    <RootNamespace>Controller</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\Controller\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\Controller\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\Controller\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\Controller\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\Controller\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\Controller\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Controller</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Controller</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Controller</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Src;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/qtpropertybrowser;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGui;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Src;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/qtpropertybrowser;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGui;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Src;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/qtpropertybrowser;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGui;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;TARGET_SIM;QT_NO_STL;QXT_STATIC;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Controller\BHToolBar.cpp" />
+    <ClCompile Include="..\..\Src\Controller\CameraCalibratorHandler.cpp" />
+    <ClCompile Include="..\..\Src\Controller\ConsoleRoboCupCtrl.cpp" />
+    <ClCompile Include="..\..\Src\Controller\GameController.cpp" />
+    <ClCompile Include="..\..\Src\Controller\ImageViewAdapter.cpp" />
+    <ClCompile Include="..\..\Src\Controller\LocalRobot.cpp" />
+    <ClCompile Include="..\..\Src\Controller\LogPlayer.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Oracle.cpp" />
+    <ClCompile Include="..\..\Src\Controller\RemoteRobot.cpp" />
+    <ClCompile Include="..\..\Src\Controller\RoboCupCtrl.cpp" />
+    <ClCompile Include="..\..\Src\Controller\RobotConsole.cpp" />
+    <ClCompile Include="..\..\Src\Controller\TeamComm3DCtrl.cpp" />
+    <ClCompile Include="..\..\Src\Controller\TeamRobot.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Directory.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Joystick.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Representations\ModuleInfo.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Representations\TimeInfo.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\CABSLGraphView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ColorReferenceView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ColorSpaceView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ConsoleView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DotView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\FieldView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\FootView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ImageView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\JointView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ModuleGraphView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\PlotView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\SensorView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\StateMachineBehaviorView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\TeamComm3DView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\View3D.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\ColorCalibrationView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\RangeSelector.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\ThresholdSelector.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\DataView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\EditorEventFilter.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyEditorFactory.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyManager.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyTreeCreator.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyTreeWriter.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\TypeDescriptor.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\TimeView\TimeView.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\TimeView\TimeWidget.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\BikeMenuBar.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\TabWidget.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBike.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeGLWidget.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeMath.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeWidget.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Visualization\DebugDrawing.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Visualization\DebugDrawing3D.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Visualization\HeaderedWidget.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Visualization\OpenGLMethods.cpp" />
+    <ClCompile Include="..\..\Src\Controller\Visualization\PaintMethods.cpp" />
+    <CustomBuild Include="..\..\Src\Controller\BHToolBar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"BHToolBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/BHToolBar.h -o ../../Build/Controller/Win32/Develop/moc_BHToolBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_BHToolBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"BHToolBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/BHToolBar.h -o ../../Build/Controller/Win32/Debug/moc_BHToolBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_BHToolBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"BHToolBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/BHToolBar.h -o ../../Build/Controller/Win32/Release/moc_BHToolBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_BHToolBar.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\CameraCalibratorHandler.h" />
+    <ClInclude Include="..\..\Src\Controller\ConsoleRoboCupCtrl.h" />
+    <ClInclude Include="..\..\Src\Controller\GameController.h" />
+    <ClInclude Include="..\..\Src\Controller\ImageViewAdapter.h" />
+    <ClInclude Include="..\..\Src\Controller\LocalRobot.h" />
+    <ClInclude Include="..\..\Src\Controller\LogPlayer.h" />
+    <ClInclude Include="..\..\Src\Controller\Oracle.h" />
+    <ClInclude Include="..\..\Src\Controller\RemoteRobot.h" />
+    <ClInclude Include="..\..\Src\Controller\RoboCupCtrl.h" />
+    <ClInclude Include="..\..\Src\Controller\RobotConsole.h" />
+    <ClInclude Include="..\..\Src\Controller\TeamComm3DCtrl.h" />
+    <ClInclude Include="..\..\Src\Controller\TeamRobot.h" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Directory.h" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Joystick.h" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Directory.h" />
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Joystick.h" />
+    <ClInclude Include="..\..\Src\Controller\Representations\ModuleInfo.h" />
+    <ClInclude Include="..\..\Src\Controller\Representations\TimeInfo.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\CABSLGraphView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\ColorReferenceView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\ColorSpaceView.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\ConsoleView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ConsoleView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ConsoleView.h -o ../../Build/Controller/Win32/Develop/moc_ConsoleView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ConsoleView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ConsoleView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ConsoleView.h -o ../../Build/Controller/Win32/Debug/moc_ConsoleView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ConsoleView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ConsoleView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ConsoleView.h -o ../../Build/Controller/Win32/Release/moc_ConsoleView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ConsoleView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\DotView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"DotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DotView.h -o ../../Build/Controller/Win32/Develop/moc_DotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_DotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"DotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DotView.h -o ../../Build/Controller/Win32/Debug/moc_DotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_DotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"DotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DotView.h -o ../../Build/Controller/Win32/Release/moc_DotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_DotView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\FieldView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\FootView.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\ImageView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ImageView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ImageView.h -o ../../Build/Controller/Win32/Develop/moc_ImageView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ImageView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ImageView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ImageView.h -o ../../Build/Controller/Win32/Debug/moc_ImageView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ImageView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ImageView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ImageView.h -o ../../Build/Controller/Win32/Release/moc_ImageView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ImageView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\JointView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\ModuleGraphView.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\PlotView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"PlotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/PlotView.h -o ../../Build/Controller/Win32/Develop/moc_PlotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_PlotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"PlotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/PlotView.h -o ../../Build/Controller/Win32/Debug/moc_PlotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_PlotView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"PlotView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/PlotView.h -o ../../Build/Controller/Win32/Release/moc_PlotView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_PlotView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\SensorView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\StateMachineBehaviorView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\TeamComm3DView.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\View3D.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\ColorCalibrationView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ColorCalibrationView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ColorCalibrationView.h -o ../../Build/Controller/Win32/Develop/moc_ColorCalibrationView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ColorCalibrationView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ColorCalibrationView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ColorCalibrationView.h -o ../../Build/Controller/Win32/Debug/moc_ColorCalibrationView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ColorCalibrationView.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ColorCalibrationView.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ColorCalibrationView.h -o ../../Build/Controller/Win32/Release/moc_ColorCalibrationView.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ColorCalibrationView.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\RangeSelector.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"RangeSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/RangeSelector.h -o ../../Build/Controller/Win32/Develop/moc_RangeSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_RangeSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"RangeSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/RangeSelector.h -o ../../Build/Controller/Win32/Debug/moc_RangeSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_RangeSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"RangeSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/RangeSelector.h -o ../../Build/Controller/Win32/Release/moc_RangeSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_RangeSelector.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\ThresholdSelector.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ThresholdSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ThresholdSelector.h -o ../../Build/Controller/Win32/Develop/moc_ThresholdSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ThresholdSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ThresholdSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ThresholdSelector.h -o ../../Build/Controller/Win32/Debug/moc_ThresholdSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ThresholdSelector.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ThresholdSelector.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ColorCalibrationView/ThresholdSelector.h -o ../../Build/Controller/Win32/Release/moc_ThresholdSelector.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ThresholdSelector.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\DataView.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\DataWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"DataWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/DataWidget.h -o ../../Build/Controller/Win32/Develop/moc_DataWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_DataWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"DataWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/DataWidget.h -o ../../Build/Controller/Win32/Debug/moc_DataWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_DataWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"DataWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/DataWidget.h -o ../../Build/Controller/Win32/Release/moc_DataWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_DataWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\EditorEventFilter.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\PropertyEditorFactory.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"PropertyEditorFactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyEditorFactory.h -o ../../Build/Controller/Win32/Develop/moc_PropertyEditorFactory.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_PropertyEditorFactory.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"PropertyEditorFactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyEditorFactory.h -o ../../Build/Controller/Win32/Debug/moc_PropertyEditorFactory.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_PropertyEditorFactory.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"PropertyEditorFactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyEditorFactory.h -o ../../Build/Controller/Win32/Release/moc_PropertyEditorFactory.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_PropertyEditorFactory.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\PropertyManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"PropertyManager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyManager.h -o ../../Build/Controller/Win32/Develop/moc_PropertyManager.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_PropertyManager.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"PropertyManager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyManager.h -o ../../Build/Controller/Win32/Debug/moc_PropertyManager.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_PropertyManager.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"PropertyManager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/DataView/PropertyManager.h -o ../../Build/Controller/Win32/Release/moc_PropertyManager.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_PropertyManager.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\PropertyTreeCreator.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\PropertyTreeWriter.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\TypeDeclarations.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\TypeDescriptor.h" />
+    <ClInclude Include="..\..\Src\Controller\Views\TimeView\TimeView.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\TimeView\TimeWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"TimeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/TimeView/TimeWidget.h -o ../../Build/Controller/Win32/Develop/moc_TimeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_TimeWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"TimeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/TimeView/TimeWidget.h -o ../../Build/Controller/Win32/Debug/moc_TimeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_TimeWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"TimeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/TimeView/TimeWidget.h -o ../../Build/Controller/Win32/Release/moc_TimeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_TimeWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\ViewBike\BikeMenuBar.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\TabWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"TabWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/TabWidget.h -o ../../Build/Controller/Win32/Develop/moc_TabWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_TabWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"TabWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/TabWidget.h -o ../../Build/Controller/Win32/Debug/moc_TabWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_TabWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"TabWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/TabWidget.h -o ../../Build/Controller/Win32/Release/moc_TabWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_TabWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBike.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ViewBike.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBike.h -o ../../Build/Controller/Win32/Develop/moc_ViewBike.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ViewBike.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ViewBike.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBike.h -o ../../Build/Controller/Win32/Debug/moc_ViewBike.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ViewBike.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ViewBike.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBike.h -o ../../Build/Controller/Win32/Release/moc_ViewBike.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ViewBike.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBikeGLWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ViewBikeGLWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeGLWidget.h -o ../../Build/Controller/Win32/Develop/moc_ViewBikeGLWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ViewBikeGLWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ViewBikeGLWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeGLWidget.h -o ../../Build/Controller/Win32/Debug/moc_ViewBikeGLWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ViewBikeGLWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ViewBikeGLWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeGLWidget.h -o ../../Build/Controller/Win32/Release/moc_ViewBikeGLWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ViewBikeGLWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\ViewBike\ViewBikeMath.h" />
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBikeWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ViewBikeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeWidget.h -o ../../Build/Controller/Win32/Develop/moc_ViewBikeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/moc_ViewBikeWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ViewBikeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeWidget.h -o ../../Build/Controller/Win32/Debug/moc_ViewBikeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/moc_ViewBikeWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ViewBikeWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DTARGET_SIM -DQT_NO_STL -DQXT_STATIC -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Src -I../../Util/SimRobot/Src/SimRobot -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/qtpropertybrowser -I../../Util/snappy/include -I../../Util/libqxt -I../../Src/Platform/Win32 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGui -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg -I../../Util/SimRobot/Util/glew/Win32/include ../../Src/Controller/Views/ViewBike/ViewBikeWidget.h -o ../../Build/Controller/Win32/Release/moc_ViewBikeWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/moc_ViewBikeWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Visualization\DebugDrawing.h" />
+    <ClInclude Include="..\..\Src\Controller\Visualization\DebugDrawing3D.h" />
+    <ClInclude Include="..\..\Src\Controller\Visualization\HeaderedWidget.h" />
+    <ClInclude Include="..\..\Src\Controller\Visualization\OpenGLMethods.h" />
+    <ClInclude Include="..\..\Src\Controller\Visualization\PaintMethods.h" />
+    <ClCompile Include="..\..\Src\Utils\URC\MofCompiler.cpp" />
+    <ClInclude Include="..\..\Src\Utils\URC\MofCompiler.h" />
+    <CustomBuild Include="..\..\Src\Controller\Controller.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"Controller.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name Controller ../../Src/Controller/Controller.qrc -o ../../Build/Controller/Win32/Develop/qrc_Controller.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Src/Controller/Icons/allColors.png;../../Src/Controller/Icons/arrow_refresh.png;../../Src/Controller/Icons/bike_new.png;../../Src/Controller/Icons/bike_open.png;../../Src/Controller/Icons/bike_save.png;../../Src/Controller/Icons/bike_save_as.png;../../Src/Controller/Icons/black.png;../../Src/Controller/Icons/blue.png;../../Src/Controller/Icons/camDown.png;../../Src/Controller/Icons/camUp.png;../../Src/Controller/Icons/chestButton.png;../../Src/Controller/Icons/delete.png;../../Src/Controller/Icons/green.png;../../Src/Controller/Icons/headAngle.png;../../Src/Controller/Icons/move.png;../../Src/Controller/Icons/orange.png;../../Src/Controller/Icons/page_white_h.png;../../Src/Controller/Icons/red.png;../../Src/Controller/Icons/sitDown.png;../../Src/Controller/Icons/stand.png;../../Src/Controller/Icons/upload.png;../../Src/Controller/Icons/white.png;../../Src/Controller/Icons/yellow.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/Controller/Win32/Develop/qrc_Controller.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"Controller.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name Controller ../../Src/Controller/Controller.qrc -o ../../Build/Controller/Win32/Debug/qrc_Controller.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Src/Controller/Icons/allColors.png;../../Src/Controller/Icons/arrow_refresh.png;../../Src/Controller/Icons/bike_new.png;../../Src/Controller/Icons/bike_open.png;../../Src/Controller/Icons/bike_save.png;../../Src/Controller/Icons/bike_save_as.png;../../Src/Controller/Icons/black.png;../../Src/Controller/Icons/blue.png;../../Src/Controller/Icons/camDown.png;../../Src/Controller/Icons/camUp.png;../../Src/Controller/Icons/chestButton.png;../../Src/Controller/Icons/delete.png;../../Src/Controller/Icons/green.png;../../Src/Controller/Icons/headAngle.png;../../Src/Controller/Icons/move.png;../../Src/Controller/Icons/orange.png;../../Src/Controller/Icons/page_white_h.png;../../Src/Controller/Icons/red.png;../../Src/Controller/Icons/sitDown.png;../../Src/Controller/Icons/stand.png;../../Src/Controller/Icons/upload.png;../../Src/Controller/Icons/white.png;../../Src/Controller/Icons/yellow.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/Controller/Win32/Debug/qrc_Controller.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"Controller.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name Controller ../../Src/Controller/Controller.qrc -o ../../Build/Controller/Win32/Release/qrc_Controller.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Src/Controller/Icons/allColors.png;../../Src/Controller/Icons/arrow_refresh.png;../../Src/Controller/Icons/bike_new.png;../../Src/Controller/Icons/bike_open.png;../../Src/Controller/Icons/bike_save.png;../../Src/Controller/Icons/bike_save_as.png;../../Src/Controller/Icons/black.png;../../Src/Controller/Icons/blue.png;../../Src/Controller/Icons/camDown.png;../../Src/Controller/Icons/camUp.png;../../Src/Controller/Icons/chestButton.png;../../Src/Controller/Icons/delete.png;../../Src/Controller/Icons/green.png;../../Src/Controller/Icons/headAngle.png;../../Src/Controller/Icons/move.png;../../Src/Controller/Icons/orange.png;../../Src/Controller/Icons/page_white_h.png;../../Src/Controller/Icons/red.png;../../Src/Controller/Icons/sitDown.png;../../Src/Controller/Icons/stand.png;../../Src/Controller/Icons/upload.png;../../Src/Controller/Icons/white.png;../../Src/Controller/Icons/yellow.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/Controller/Win32/Release/qrc_Controller.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\qrc_Controller.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Src\Controller\Icons\allColors.png" />
+    <None Include="..\..\Src\Controller\Icons\arrow_refresh.png" />
+    <None Include="..\..\Src\Controller\Icons\bike_new.png" />
+    <None Include="..\..\Src\Controller\Icons\bike_open.png" />
+    <None Include="..\..\Src\Controller\Icons\bike_save.png" />
+    <None Include="..\..\Src\Controller\Icons\bike_save_as.png" />
+    <None Include="..\..\Src\Controller\Icons\black.png" />
+    <None Include="..\..\Src\Controller\Icons\blue.png" />
+    <None Include="..\..\Src\Controller\Icons\camDown.png" />
+    <None Include="..\..\Src\Controller\Icons\camUp.png" />
+    <None Include="..\..\Src\Controller\Icons\chestButton.png" />
+    <None Include="..\..\Src\Controller\Icons\delete.png" />
+    <None Include="..\..\Src\Controller\Icons\green.png" />
+    <None Include="..\..\Src\Controller\Icons\headAngle.png" />
+    <None Include="..\..\Src\Controller\Icons\move.png" />
+    <None Include="..\..\Src\Controller\Icons\orange.png" />
+    <None Include="..\..\Src\Controller\Icons\page_white_h.png" />
+    <None Include="..\..\Src\Controller\Icons\red.png" />
+    <None Include="..\..\Src\Controller\Icons\sitDown.png" />
+    <None Include="..\..\Src\Controller\Icons\stand.png" />
+    <None Include="..\..\Src\Controller\Icons\upload.png" />
+    <None Include="..\..\Src\Controller\Icons\white.png" />
+    <None Include="..\..\Src\Controller\Icons\yellow.png" />
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBikeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_DataWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PropertyManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PropertyEditorFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_TimeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_TabWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBike.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBikeGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PlotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ConsoleView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ImageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_DotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_BHToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ColorCalibrationView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_RangeSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ThresholdSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\qrc_Controller.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBikeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_DataWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PropertyManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PropertyEditorFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_TimeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_TabWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBike.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBikeGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PlotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ConsoleView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ImageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_DotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_BHToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ColorCalibrationView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_RangeSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ThresholdSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\qrc_Controller.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBikeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_DataWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PropertyManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PropertyEditorFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_TimeWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_TabWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBike.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBikeGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PlotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ConsoleView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ImageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_DotView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_BHToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ColorCalibrationView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_RangeSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ThresholdSelector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>libbhuman</ProjectName>
+    <ProjectGuid>{77FE05C3-0B4F-6AD8-ABDD-D35D30222732}</ProjectGuid>
+    <RootNamespace>libbhuman</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\libbhuman\Linux\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\libbhuman\Linux\Develop\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies libbhuman config=Develop 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies rebuild libbhuman config=Develop 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\mare\Win32\bin\mare.exe --ignore-dependencies clean libbhuman config=Develop</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/libbhuman/Linux/Develop/libbhuman.so</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">LINUX;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Src;../../Util/alcommon/include;../../Util/boost/linux;../../Util/Buildchain/gcc/include;../../Util/Buildchain/gcc/include/c++/4.7.1;../../Util/Buildchain/gcc/include/c++/4.7.1/i486-linux-gnu;../../Util/Buildchain/clang4.2/include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\libbhuman\Linux\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\libbhuman\Linux\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies libbhuman config=Debug 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies rebuild libbhuman config=Debug 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\mare\Win32\bin\mare.exe --ignore-dependencies clean libbhuman config=Debug</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/libbhuman/Linux/Debug/libbhuman.so</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LINUX;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Src;../../Util/alcommon/include;../../Util/boost/linux;../../Util/Buildchain/gcc/include;../../Util/Buildchain/gcc/include/c++/4.7.1;../../Util/Buildchain/gcc/include/c++/4.7.1/i486-linux-gnu;../../Util/Buildchain/clang4.2/include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\libbhuman\Linux\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\libbhuman\Linux\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies libbhuman config=Release 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bash -c "../../Util/mare/Win32/bin/mare.exe --ignore-dependencies rebuild libbhuman config=Release 2&gt;&amp;1 | sed -u -e \"s=:\([0-9][0-9]*\)[:,]\([0-9][0-9]*:\)*=(\1):=\" -e \"s=/=\\\\\\=g\" 1&gt;&amp;2"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\mare\Win32\bin\mare.exe --ignore-dependencies clean libbhuman config=Release</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/libbhuman/Linux/Release/libbhuman.so</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LINUX;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Src;../../Util/alcommon/include;../../Util/boost/linux;../../Util/Buildchain/gcc/include;../../Util/Buildchain/gcc/include/c++/4.7.1;../../Util/Buildchain/gcc/include/c++/4.7.1/i486-linux-gnu;../../Util/Buildchain/clang4.2/include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">libbhuman</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.so</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libbhuman</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.so</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libbhuman</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.so</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\libbhuman\bhuman.cpp" />
+    <ClInclude Include="..\..\Src\libbhuman\bhuman.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

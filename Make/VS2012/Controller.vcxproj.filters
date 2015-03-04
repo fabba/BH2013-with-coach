@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{9BBF3737-97BF-7CF7-BA62-C80023682E25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Platform">
+      <UniqueIdentifier>{1EF6FF56-0C60-9187-884A-62619772F214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Platform\Win32">
+      <UniqueIdentifier>{04B17E5E-31E3-96FD-11C1-75C91BCD9B39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Representations">
+      <UniqueIdentifier>{A3A2AE55-6DBA-BC37-8EF5-3E3D9F940A6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Views">
+      <UniqueIdentifier>{1BCE42A5-31AE-2D72-D6C8-F0F6B8850829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Views\ColorCalibrationView">
+      <UniqueIdentifier>{63AC017D-1C24-0A8E-48F9-3F60CCB5D7BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Views\DataView">
+      <UniqueIdentifier>{2F241598-19F7-434D-B3C4-D2971C9ED85F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Views\TimeView">
+      <UniqueIdentifier>{43A419D4-B013-71ED-22A3-D63C4ABCC1C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Views\ViewBike">
+      <UniqueIdentifier>{28F44D92-27CD-FE0E-0D2F-8651107886F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Visualization">
+      <UniqueIdentifier>{D359C26D-7CD4-E687-C239-5EF2D5B424C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{A470A233-26B3-831D-D974-DFC1116119C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\URC">
+      <UniqueIdentifier>{21757A2F-3EA8-F305-4C69-0B28EBA95B40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".Qt">
+      <UniqueIdentifier>{26983797-AD25-9CBF-C563-C317038CED7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Icons">
+      <UniqueIdentifier>{16845948-8363-23D2-031F-39E30B7CC14C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Controller\BHToolBar.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\CameraCalibratorHandler.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\ConsoleRoboCupCtrl.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\GameController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\ImageViewAdapter.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\LocalRobot.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\LogPlayer.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Oracle.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\RemoteRobot.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\RoboCupCtrl.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\RobotConsole.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\TeamComm3DCtrl.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\TeamRobot.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Directory.cpp">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Joystick.cpp">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Representations\ModuleInfo.cpp">
+      <Filter>Controller\Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Representations\TimeInfo.cpp">
+      <Filter>Controller\Representations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\CABSLGraphView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ColorReferenceView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ColorSpaceView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ConsoleView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DotView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\FieldView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\FootView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ImageView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\JointView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ModuleGraphView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\PlotView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\SensorView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\StateMachineBehaviorView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\TeamComm3DView.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\View3D.cpp">
+      <Filter>Controller\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\ColorCalibrationView.cpp">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\RangeSelector.cpp">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ColorCalibrationView\ThresholdSelector.cpp">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\DataView.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\EditorEventFilter.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyEditorFactory.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyManager.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyTreeCreator.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\PropertyTreeWriter.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\DataView\TypeDescriptor.cpp">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\TimeView\TimeView.cpp">
+      <Filter>Controller\Views\TimeView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\TimeView\TimeWidget.cpp">
+      <Filter>Controller\Views\TimeView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\BikeMenuBar.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\TabWidget.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBike.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeGLWidget.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeMath.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Views\ViewBike\ViewBikeWidget.cpp">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Visualization\DebugDrawing.cpp">
+      <Filter>Controller\Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Visualization\DebugDrawing3D.cpp">
+      <Filter>Controller\Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Visualization\HeaderedWidget.cpp">
+      <Filter>Controller\Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Visualization\OpenGLMethods.cpp">
+      <Filter>Controller\Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Controller\Visualization\PaintMethods.cpp">
+      <Filter>Controller\Visualization</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Src\Controller\BHToolBar.h">
+      <Filter>Controller</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\CameraCalibratorHandler.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\ConsoleRoboCupCtrl.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\GameController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\ImageViewAdapter.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\LocalRobot.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\LogPlayer.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Oracle.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\RemoteRobot.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\RoboCupCtrl.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\RobotConsole.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\TeamComm3DCtrl.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\TeamRobot.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Platform\Directory.h">
+      <Filter>Controller\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Platform\Joystick.h">
+      <Filter>Controller\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Directory.h">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Joystick.h">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Representations\ModuleInfo.h">
+      <Filter>Controller\Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Representations\TimeInfo.h">
+      <Filter>Controller\Representations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\CABSLGraphView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\ColorReferenceView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\ColorSpaceView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\ConsoleView.h">
+      <Filter>Controller\Views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\DotView.h">
+      <Filter>Controller\Views</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\FieldView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\FootView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\ImageView.h">
+      <Filter>Controller\Views</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\JointView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\ModuleGraphView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\PlotView.h">
+      <Filter>Controller\Views</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\SensorView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\StateMachineBehaviorView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\TeamComm3DView.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\View3D.h">
+      <Filter>Controller\Views</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\ColorCalibrationView.h">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\RangeSelector.h">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ColorCalibrationView\ThresholdSelector.h">
+      <Filter>Controller\Views\ColorCalibrationView</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\DataView.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\DataWidget.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\EditorEventFilter.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\PropertyEditorFactory.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\DataView\PropertyManager.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\PropertyTreeCreator.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\PropertyTreeWriter.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\TypeDeclarations.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\DataView\TypeDescriptor.h">
+      <Filter>Controller\Views\DataView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Views\TimeView\TimeView.h">
+      <Filter>Controller\Views\TimeView</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\TimeView\TimeWidget.h">
+      <Filter>Controller\Views\TimeView</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\ViewBike\BikeMenuBar.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\TabWidget.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBike.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBikeGLWidget.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Views\ViewBike\ViewBikeMath.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Views\ViewBike\ViewBikeWidget.h">
+      <Filter>Controller\Views\ViewBike</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Controller\Visualization\DebugDrawing.h">
+      <Filter>Controller\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Visualization\DebugDrawing3D.h">
+      <Filter>Controller\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Visualization\HeaderedWidget.h">
+      <Filter>Controller\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Visualization\OpenGLMethods.h">
+      <Filter>Controller\Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Visualization\PaintMethods.h">
+      <Filter>Controller\Visualization</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Utils\URC\MofCompiler.cpp">
+      <Filter>Utils\URC</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Utils\URC\MofCompiler.h">
+      <Filter>Utils\URC</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Controller\Controller.qrc">
+      <Filter>Controller</Filter>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\qrc_Controller.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <None Include="..\..\Src\Controller\Icons\allColors.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\arrow_refresh.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\bike_new.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\bike_open.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\bike_save.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\bike_save_as.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\black.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\blue.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\camDown.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\camUp.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\chestButton.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\delete.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\green.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\headAngle.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\move.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\orange.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\page_white_h.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\red.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\sitDown.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\stand.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\upload.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\white.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <None Include="..\..\Src\Controller\Icons\yellow.png">
+      <Filter>Controller\Icons</Filter>
+    </None>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBikeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_DataWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PropertyManager.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PropertyEditorFactory.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_TimeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_TabWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBike.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ViewBikeGLWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_PlotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ConsoleView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ImageView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_DotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_BHToolBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ColorCalibrationView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_RangeSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Develop\moc_ThresholdSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\qrc_Controller.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBikeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_DataWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PropertyManager.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PropertyEditorFactory.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_TimeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_TabWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBike.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ViewBikeGLWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_PlotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ConsoleView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ImageView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_DotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_BHToolBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ColorCalibrationView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_RangeSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Debug\moc_ThresholdSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\qrc_Controller.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBikeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_DataWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PropertyManager.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PropertyEditorFactory.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_TimeWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_TabWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBike.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ViewBikeGLWidget.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_PlotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ConsoleView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ImageView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_DotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_BHToolBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ColorCalibrationView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_RangeSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Controller\Win32\Release\moc_ThresholdSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

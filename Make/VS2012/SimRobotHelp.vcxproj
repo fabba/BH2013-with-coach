@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SimRobotHelp</ProjectName>
+    <ProjectGuid>{A9B37A8C-C7D9-EF99-D367-9F24BFBD6295}</ProjectGuid>
+    <RootNamespace>SimRobotHelp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotHelp\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotHelp\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotHelp\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotHelp\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotHelp\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotHelp\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">SimRobotHelp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimRobotHelp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimRobotHelp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotHelp;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtHelp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtHelp4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotHelp;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtHelp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtHelp4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotHelp;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtHelp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_HELP_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtHelp4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\index.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\api\api.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\architecture.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\basics.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\physics.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\quickstart.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\sensing.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\basics\specification.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\console\commands.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\examples\examples.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\faq\faq.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\console.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\editmenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\editorwindow.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\filemenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\helpmenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\interface.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\menus.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\objectwindow.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\sensorwindow.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\simulationmenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\statusbar.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\toolbar.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\treewindow.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\viewmenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\interface\windowmenu.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\rosiml\rosi.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\rosiml\rosi_controller.html" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\simrobothelp.css" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\help.qhp">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"help.qhp (qhelpgenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\qhelpgenerator.exe ../../Util/SimRobot/Src/SimRobotHelp/Help/help.qhp -o ../../Build/SimRobotHelp/Win32/Develop/help.qch</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Help/index.html;../../Util/SimRobot/Src/SimRobotHelp/Help/api/api.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/architecture.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/basics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/physics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/quickstart.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/sensing.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/specification.html;../../Util/SimRobot/Src/SimRobotHelp/Help/console/commands.html;../../Util/SimRobot/Src/SimRobotHelp/Help/examples/examples.html;../../Util/SimRobot/Src/SimRobotHelp/Help/faq/faq.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/console.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/filemenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/helpmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/interface.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/menus.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/objectwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/sensorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/simulationmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/statusbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/toolbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/treewindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/viewmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/windowmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi_controller.html;../../Util/SimRobot/Src/SimRobotHelp/Help/simrobothelp.css;../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit_xp.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/crystal_toolbar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/status_bar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_camera.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_clock.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_color_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_column_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_copy.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_cut.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_drag_and_drop_plane.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_grid.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_help.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_light.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_line_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_monochrome_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_motion_blur.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_new.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_open.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_paste.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_reset.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_save.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_search.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_shader_interface.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_show_sensors.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_start.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_step.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_stereogram.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_surface_rendering.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_tree_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_update_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_view_item.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/architecture.png;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/SimRobot.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotHelp/Win32/Develop/help.qch;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"help.qhp (qhelpgenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\qhelpgenerator.exe ../../Util/SimRobot/Src/SimRobotHelp/Help/help.qhp -o ../../Build/SimRobotHelp/Win32/Debug/help.qch</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Help/index.html;../../Util/SimRobot/Src/SimRobotHelp/Help/api/api.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/architecture.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/basics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/physics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/quickstart.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/sensing.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/specification.html;../../Util/SimRobot/Src/SimRobotHelp/Help/console/commands.html;../../Util/SimRobot/Src/SimRobotHelp/Help/examples/examples.html;../../Util/SimRobot/Src/SimRobotHelp/Help/faq/faq.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/console.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/filemenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/helpmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/interface.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/menus.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/objectwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/sensorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/simulationmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/statusbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/toolbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/treewindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/viewmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/windowmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi_controller.html;../../Util/SimRobot/Src/SimRobotHelp/Help/simrobothelp.css;../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit_xp.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/crystal_toolbar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/status_bar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_camera.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_clock.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_color_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_column_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_copy.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_cut.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_drag_and_drop_plane.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_grid.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_help.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_light.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_line_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_monochrome_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_motion_blur.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_new.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_open.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_paste.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_reset.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_save.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_search.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_shader_interface.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_show_sensors.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_start.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_step.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_stereogram.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_surface_rendering.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_tree_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_update_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_view_item.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/architecture.png;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/SimRobot.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotHelp/Win32/Debug/help.qch;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"help.qhp (qhelpgenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\qhelpgenerator.exe ../../Util/SimRobot/Src/SimRobotHelp/Help/help.qhp -o ../../Build/SimRobotHelp/Win32/Release/help.qch</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Help/index.html;../../Util/SimRobot/Src/SimRobotHelp/Help/api/api.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/architecture.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/basics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/physics.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/quickstart.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/sensing.html;../../Util/SimRobot/Src/SimRobotHelp/Help/basics/specification.html;../../Util/SimRobot/Src/SimRobotHelp/Help/console/commands.html;../../Util/SimRobot/Src/SimRobotHelp/Help/examples/examples.html;../../Util/SimRobot/Src/SimRobotHelp/Help/faq/faq.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/console.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/editorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/filemenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/helpmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/interface.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/menus.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/objectwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/sensorwindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/simulationmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/statusbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/toolbar.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/treewindow.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/viewmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/interface/windowmenu.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi.html;../../Util/SimRobot/Src/SimRobotHelp/Help/rosiml/rosi_controller.html;../../Util/SimRobot/Src/SimRobotHelp/Help/simrobothelp.css;../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/app_exit_xp.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/crystal_toolbar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/status_bar.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_camera.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_clock.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_color_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_column_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_copy.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_cut.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_drag_and_drop_plane.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_grid.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_help.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_light.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_line_graph.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_monochrome_image.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_motion_blur.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_new.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_open.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_paste.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_reset.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_save.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_search.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_shader_interface.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_show_sensors.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_start.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_step.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_stereogram.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_surface_rendering.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_tree_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_update_view.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/toolbar_view_item.bmp;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/architecture.png;../../Util/SimRobot/Src/SimRobotHelp/Help/Icons/SimRobot.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotHelp/Win32/Release/help.qch;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\helpcollection.qhcp">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"helpcollection.qhcp (qcollectiongenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">bash -c "cp ../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp ../../Build/SimRobotHelp/Win32/Develop/helpcollection.qhcp &amp;&amp; ../../Util/SimRobot/Util/qt/Win32/bin/qcollectiongenerator.exe ../../Build/SimRobotHelp/Win32/Develop/helpcollection.qhcp -o ../../Build/SimRobotHelp/Win32/Develop/helpcollection.qhc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotHelp/Win32/Develop/help.qch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotHelp/Win32/Develop/helpcollection.qhc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"helpcollection.qhcp (qcollectiongenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bash -c "cp ../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp ../../Build/SimRobotHelp/Win32/Debug/helpcollection.qhcp &amp;&amp; ../../Util/SimRobot/Util/qt/Win32/bin/qcollectiongenerator.exe ../../Build/SimRobotHelp/Win32/Debug/helpcollection.qhcp -o ../../Build/SimRobotHelp/Win32/Debug/helpcollection.qhc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotHelp/Win32/Debug/help.qch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotHelp/Win32/Debug/helpcollection.qhc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"helpcollection.qhcp (qcollectiongenerator)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bash -c "cp ../../Util/SimRobot/Src/SimRobotHelp/Help/helpcollection.qhcp ../../Build/SimRobotHelp/Win32/Release/helpcollection.qhcp &amp;&amp; ../../Util/SimRobot/Util/qt/Win32/bin/qcollectiongenerator.exe ../../Build/SimRobotHelp/Win32/Release/helpcollection.qhcp -o ../../Build/SimRobotHelp/Win32/Release/helpcollection.qhc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotHelp/Win32/Release/help.qch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotHelp/Win32/Release/helpcollection.qhc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\app_exit.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\app_exit_xp.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\crystal_toolbar.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\status_bar.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_camera.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_clock.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_color_image.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_column_graph.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_copy.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_cut.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_drag_and_drop_plane.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_grid.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_help.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_light.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_line_graph.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_monochrome_image.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_motion_blur.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_new.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_open.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_paste.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_reset.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_save.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_search.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_shader_interface.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_show_sensors.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_start.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_step.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_stereogram.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_surface_rendering.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_tree_view.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_update_view.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\toolbar_view_item.bmp" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\architecture.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Help\Icons\SimRobot.png" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotHelp\HelpModule.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotHelp\HelpWidget.cpp" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotHelp\HelpModule.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotHelp\HelpWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"HelpWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HELP_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotHelp -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtHelp ../../Util/SimRobot/Src/SimRobotHelp/HelpWidget.h -o ../../Build/SimRobotHelp/Win32/Develop/moc_HelpWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotHelp/Win32/Develop/moc_HelpWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"HelpWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HELP_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotHelp -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtHelp ../../Util/SimRobot/Src/SimRobotHelp/HelpWidget.h -o ../../Build/SimRobotHelp/Win32/Debug/moc_HelpWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotHelp/Win32/Debug/moc_HelpWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"HelpWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HELP_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotHelp -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtHelp ../../Util/SimRobot/Src/SimRobotHelp/HelpWidget.h -o ../../Build/SimRobotHelp/Win32/Release/moc_HelpWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotHelp/Win32/Release/moc_HelpWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotHelp\SimRobotHelp.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotHelp.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotHelp ../../Util/SimRobot/Src/SimRobotHelp/SimRobotHelp.qrc -o ../../Build/SimRobotHelp/Win32/Develop/qrc_SimRobotHelp.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Icons/back.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/forward.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/help.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/home.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/locate.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotHelp/Win32/Develop/qrc_SimRobotHelp.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotHelp.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotHelp ../../Util/SimRobot/Src/SimRobotHelp/SimRobotHelp.qrc -o ../../Build/SimRobotHelp/Win32/Debug/qrc_SimRobotHelp.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Icons/back.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/forward.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/help.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/home.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/locate.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotHelp/Win32/Debug/qrc_SimRobotHelp.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotHelp.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotHelp ../../Util/SimRobot/Src/SimRobotHelp/SimRobotHelp.qrc -o ../../Build/SimRobotHelp/Win32/Release/qrc_SimRobotHelp.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/SimRobot/Src/SimRobotHelp/Icons/back.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/forward.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/help.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/home.png;../../Util/SimRobot/Src/SimRobotHelp/Icons/locate.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotHelp/Win32/Release/qrc_SimRobotHelp.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Develop\qrc_SimRobotHelp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Icons\back.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Icons\forward.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Icons\help.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Icons\home.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotHelp\Icons\locate.png" />
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Develop\moc_HelpWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Debug\qrc_SimRobotHelp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Debug\moc_HelpWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Release\qrc_SimRobotHelp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotHelp\Win32\Release\moc_HelpWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

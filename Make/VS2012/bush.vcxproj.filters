@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="agents">
+      <UniqueIdentifier>{76EE4AD3-B12B-A347-1B52-73D26F48B51B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bhwrapper">
+      <UniqueIdentifier>{7C85E230-C153-E122-0497-C43E04FE2F31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmdlib">
+      <UniqueIdentifier>{F2885D78-B41E-3BF9-2AB0-EDBC1FB23A6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmds">
+      <UniqueIdentifier>{B02E9533-33A8-2648-B5A8-01671822AD98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{AC5552FD-6A3C-08AD-2238-7EFBE42D137D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{4A931512-CE65-BDC9-CA68-08ADF92D8783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{7D5C009E-4EB8-BBC7-8647-CAECA308E61B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{419F3742-E6DE-8E0E-C4B2-2CCE005E7630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win32">
+      <UniqueIdentifier>{3B3C6F7B-614B-F9D0-5C91-5018611E7D80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\SimRobotQt">
+      <UniqueIdentifier>{56397015-0536-33DC-06A3-D58553BAB58B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Common">
+      <UniqueIdentifier>{C2B03CD2-93E5-0438-A570-D5E91030C612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{9BBF3737-97BF-7CF7-BA62-C80023682E25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Platform">
+      <UniqueIdentifier>{1EF6FF56-0C60-9187-884A-62619772F214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Platform\Win32">
+      <UniqueIdentifier>{04B17E5E-31E3-96FD-11C1-75C91BCD9B39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{8625E1DE-7BE1-4C39-B1D1-4DC03D822497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Debugging">
+      <UniqueIdentifier>{2FFDFB8A-814E-F889-69E9-A00FEB0D4BBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Streams">
+      <UniqueIdentifier>{E9D7DD25-3161-EEA4-DC07-BF5F6F596D42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\MessageQueue">
+      <UniqueIdentifier>{E1812494-E2AB-4328-ACA3-6B15EAB333AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\ProcessFramework">
+      <UniqueIdentifier>{A7DE6B24-C0D6-E933-A1F2-2A46FE73A534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".copy">
+      <UniqueIdentifier>{AD269A76-186A-33DE-C895-9E96D65A2CF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".Qt">
+      <UniqueIdentifier>{26983797-AD25-9CBF-C563-C317038CED7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icons">
+      <UniqueIdentifier>{BD211904-49B7-E88D-B48F-A0F580A8F666}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Utils\bush\bush.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\Initializer.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\Session.cpp" />
+    <ClCompile Include="..\..\Src\Utils\bush\agents\PingAgent.cpp">
+      <Filter>agents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\agents\RemoteRobotAgent.cpp">
+      <Filter>agents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\agents\TeamCommAgent.cpp">
+      <Filter>agents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\bhwrapper\Framework.cpp">
+      <Filter>bhwrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\bhwrapper\TeamCommWrapper.cpp">
+      <Filter>bhwrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\AbstractConsole.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\CommandAdapter.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\Commands.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\Context.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\ProcessRunner.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmdlib\RobotCommand.cpp">
+      <Filter>cmdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ChangeWirelessCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\CompileCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DebugRequestCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DeployCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\DownloadLogsCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ExitCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\HelpCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\PingCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\RestartCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\SCPCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ShowCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\ShutdownCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\SSHCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\UpdateSettingsCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\cmds\UpdateWirelessCmd.cpp">
+      <Filter>cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\models\Power.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\models\Robot.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\models\Team.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ConfigMap.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ConfigMapParser.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\Filesystem.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\Platform.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\ShellTools.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\tools\StringTools.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\CommandLineCompleter.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\CommandLineEdit.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\Console.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\MainWindow.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\RobotPool.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\RobotView.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\ShortcutBar.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\TeamSelector.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\TeamView.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Utils\bush\ui\VisualContext.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Utils\bush\Initializer.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\Session.h" />
+    <CustomBuild Include="..\..\Src\Utils\bush\agents\PingAgent.h">
+      <Filter>agents</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\agents\RemoteRobotAgent.h">
+      <Filter>agents</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\agents\TeamCommAgent.h">
+      <Filter>agents</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\bhwrapper\Framework.h">
+      <Filter>bhwrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\bhwrapper\TeamCommWrapper.h">
+      <Filter>bhwrapper</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\AbstractConsole.h">
+      <Filter>cmdlib</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\Command.h">
+      <Filter>cmdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\CommandAdapter.h">
+      <Filter>cmdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\Commands.h">
+      <Filter>cmdlib</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\Context.h">
+      <Filter>cmdlib</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\IConsole.h">
+      <Filter>cmdlib</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\cmdlib\ProcessRunner.h">
+      <Filter>cmdlib</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\cmdlib\RobotCommand.h">
+      <Filter>cmdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ChangeWirelessCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\CompileCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DebugRequestCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DeployCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\DownloadLogsCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ExitCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\HelpCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\PingCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\RestartCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\SCPCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ShowCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\ShutdownCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\SSHCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\UpdateSettingsCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\cmds\UpdateWirelessCmd.h">
+      <Filter>cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\models\Power.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\models\Robot.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\models\Team.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ConfigMap.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ConfigMapParser.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Filesystem.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Platform.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\ShellTools.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\Sleeper.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Utils\bush\tools\StringTools.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\CommandLineCompleter.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <ClInclude Include="..\..\Src\Utils\bush\ui\CommandLineEdit.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\Console.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\MainWindow.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\RobotPool.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\RobotView.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\ShortcutBar.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\TeamSelector.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\TeamView.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\ui\VisualContext.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <ClCompile Include="..\..\Src\Platform\Win32\BHAssert.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\Win32\BHAssert.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Platform\Win32\Semaphore.cpp">
+      <Filter>Platform\Win32</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\Win32\Semaphore.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Win32\Thread.h">
+      <Filter>Platform\Win32</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\SystemCall.cpp">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\SystemCall.h">
+      <Filter>Platform\SimRobotQt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\BHAssert.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Camera.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\DebugHandler.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\File.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Semaphore.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\SystemCall.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\TcpComm.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Thread.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\UdpComm.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Platform\Common\File.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Common\TcpComm.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Platform\Common\UdpComm.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\Common\File.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Common\TcpComm.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Platform\Common\UdpComm.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Controller\Platform\Win32\Directory.cpp">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Controller\Platform\Win32\Directory.h">
+      <Filter>Controller\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Controller\Platform\Directory.h">
+      <Filter>Controller\Platform</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Enum.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Enum.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Global.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Global.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataTable.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataTable.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugRequest.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugRequest.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Debugging\TcpConnection.cpp">
+      <Filter>Tools\Debugging</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Debugging\TcpConnection.h">
+      <Filter>Tools\Debugging</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Streams\InOut.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\InStreams.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\OutStreams.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\SimpleMap.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\Streamable.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\Streams\StreamHandler.cpp">
+      <Filter>Tools\Streams</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Streams\AutoStreamable.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\InOut.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\InStreams.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\OutStreams.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\SimpleMap.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\Streamable.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\StreamHandler.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\InMessage.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueue.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\OutMessage.cpp">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\InMessage.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageIDs.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueue.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\OutMessage.h">
+      <Filter>Tools\MessageQueue</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\TeamHandler.cpp">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\TeamHandler.h">
+      <Filter>Tools\ProcessFramework</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Settings.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Settings.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ResourceCompile Include="..\..\Src\Utils\bush\bush.rc" />
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll">
+      <Filter>.copy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll">
+      <Filter>.copy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Src\Utils\bush\bush.qrc" />
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\qrc_bush.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <None Include="..\..\Src\Utils\bush\icons\bush.png">
+      <Filter>icons</Filter>
+    </None>
+    <None Include="..\..\Src\Utils\bush\icons\gray.png">
+      <Filter>icons</Filter>
+    </None>
+    <None Include="..\..\Src\Utils\bush\icons\green.png">
+      <Filter>icons</Filter>
+    </None>
+    <None Include="..\..\Src\Utils\bush\icons\orange.png">
+      <Filter>icons</Filter>
+    </None>
+    <None Include="..\..\Src\Utils\bush\icons\red.png">
+      <Filter>icons</Filter>
+    </None>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Session.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_PingAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamCommAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_ProcessRunner.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Context.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_AbstractConsole.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_Console.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_VisualContext.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_MainWindow.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_RobotPool.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_RobotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_ShortcutBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_TeamView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Develop\moc_CommandLineCompleter.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\qrc_bush.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Session.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_PingAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamCommAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_ProcessRunner.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Context.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_AbstractConsole.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_Console.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_VisualContext.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_MainWindow.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_RobotPool.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_RobotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_ShortcutBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_TeamView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Debug\moc_CommandLineCompleter.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\qrc_bush.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Session.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_PingAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamCommAgent.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_ProcessRunner.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Context.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_AbstractConsole.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_Console.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_VisualContext.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_MainWindow.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_RobotPool.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_RobotView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_ShortcutBar.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamSelector.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_TeamView.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\bush\Win32\Release\moc_CommandLineCompleter.cpp">
+      <Filter>.Qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SimRobotEditor</ProjectName>
+    <ProjectGuid>{F1F89685-3360-6355-3726-11909FAD1AB4}</ProjectGuid>
+    <RootNamespace>SimRobotEditor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotEditor\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotEditor\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotEditor\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotEditor\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotEditor\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotEditor\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">SimRobotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimRobotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimRobotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotEditor;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotEditor;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotEditor;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotEditor\EditorModule.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotEditor\EditorWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotEditor\SyntaxHighlighter.cpp" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotEditor\EditorModule.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotEditor\EditorWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"EditorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/EditorWidget.h -o ../../Build/SimRobotEditor/Win32/Develop/moc_EditorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotEditor/Win32/Develop/moc_EditorWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"EditorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/EditorWidget.h -o ../../Build/SimRobotEditor/Win32/Debug/moc_EditorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotEditor/Win32/Debug/moc_EditorWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"EditorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/EditorWidget.h -o ../../Build/SimRobotEditor/Win32/Release/moc_EditorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotEditor/Win32/Release/moc_EditorWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotEditor\SimRobotEditor.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotEditor\SyntaxHighlighter.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SyntaxHighlighter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/SyntaxHighlighter.h -o ../../Build/SimRobotEditor/Win32/Develop/moc_SyntaxHighlighter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotEditor/Win32/Develop/moc_SyntaxHighlighter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SyntaxHighlighter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/SyntaxHighlighter.h -o ../../Build/SimRobotEditor/Win32/Debug/moc_SyntaxHighlighter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotEditor/Win32/Debug/moc_SyntaxHighlighter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SyntaxHighlighter.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotEditor -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/SimRobot/Src/SimRobotEditor/SyntaxHighlighter.h -o ../../Build/SimRobotEditor/Win32/Release/moc_SyntaxHighlighter.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotEditor/Win32/Release/moc_SyntaxHighlighter.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotEditor\SimRobotEditor.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotEditor.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotEditor ../../Util/SimRobot/Src/SimRobotEditor/SimRobotEditor.qrc -o ../../Build/SimRobotEditor/Win32/Develop/qrc_SimRobotEditor.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_stack.png;../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_text.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotEditor/Win32/Develop/qrc_SimRobotEditor.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotEditor.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotEditor ../../Util/SimRobot/Src/SimRobotEditor/SimRobotEditor.qrc -o ../../Build/SimRobotEditor/Win32/Debug/qrc_SimRobotEditor.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_stack.png;../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_text.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotEditor/Win32/Debug/qrc_SimRobotEditor.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotEditor.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotEditor ../../Util/SimRobot/Src/SimRobotEditor/SimRobotEditor.qrc -o ../../Build/SimRobotEditor/Win32/Release/qrc_SimRobotEditor.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_stack.png;../../Util/SimRobot/Src/SimRobotEditor/Icons/page_white_text.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotEditor/Win32/Release/qrc_SimRobotEditor.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Develop\qrc_SimRobotEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Util\SimRobot\Src\SimRobotEditor\Icons\page_white_stack.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotEditor\Icons\page_white_text.png" />
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Develop\moc_EditorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Develop\moc_SyntaxHighlighter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Debug\qrc_SimRobotEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Debug\moc_EditorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Debug\moc_SyntaxHighlighter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Release\qrc_SimRobotEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Release\moc_EditorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotEditor\Win32\Release\moc_SyntaxHighlighter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

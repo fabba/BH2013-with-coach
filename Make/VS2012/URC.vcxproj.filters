@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{419F3742-E6DE-8E0E-C4B2-2CCE005E7630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Common">
+      <UniqueIdentifier>{C2B03CD2-93E5-0438-A570-D5E91030C612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{A470A233-26B3-831D-D974-DFC1116119C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\URC">
+      <UniqueIdentifier>{21757A2F-3EA8-F305-4C69-0B28EBA95B40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations">
+      <UniqueIdentifier>{09697F98-6474-02AA-6F39-BB57860BEADE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Representations\MotionControl">
+      <UniqueIdentifier>{BFCC7995-34AA-AFAC-D0E6-DCAF4B8B257B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{8625E1DE-7BE1-4C39-B1D1-4DC03D822497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Streams">
+      <UniqueIdentifier>{E9D7DD25-3161-EEA4-DC07-BF5F6F596D42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Platform\Common\File.cpp">
+      <Filter>Platform\Common</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Platform\Common\File.h">
+      <Filter>Platform\Common</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Utils\URC\MofCompiler.cpp">
+      <Filter>Utils\URC</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Utils\URC\MofCompiler.h">
+      <Filter>Utils\URC</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.cpp">
+      <Filter>Representations\MotionControl</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.h">
+      <Filter>Representations\MotionControl</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Tools\Enum.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Src\Tools\Enum.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tools\Streams\Streamable.h">
+      <Filter>Tools\Streams</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Src\Utils\URC\UniversalResourceCompiler.cpp">
+      <Filter>Utils\URC</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

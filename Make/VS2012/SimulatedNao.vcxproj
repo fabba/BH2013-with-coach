@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SimulatedNao</ProjectName>
+    <ProjectGuid>{BEC03806-D677-F901-F352-6443D791F775}</ProjectGuid>
+    <RootNamespace>SimulatedNao</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimulatedNao\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimulatedNao\Win32\Develop\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimulatedNao\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimulatedNao\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimulatedNao\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimulatedNao\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">SimulatedNao</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimulatedNao</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimulatedNao</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Src;../../Util/qtpropertybrowser;../../Util/Eigen;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Controller.lib;qtpropertybrowser.lib;snappy.lib;qxt.lib;QtCore4.lib;QtGui4.lib;QtOpenGl4.lib;QtSvg4.lib;winmm.lib;opengl32.lib;glu32.lib;ws2_32.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Build/Controller/Win32/Develop;../../Build/qtpropertybrowser/Win32/Develop;../../Build/libqxt/Win32/Develop;../../Util/libjpeg/lib;../../Util/SimRobot/Util/qt/Win32/lib;../../Util/snappy/lib/Win32/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Src;../../Util/qtpropertybrowser;../../Util/Eigen;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Controller.lib;qtpropertybrowser.lib;snappy.lib;qxt.lib;QtCore4.lib;QtGui4.lib;QtOpenGl4.lib;QtSvg4.lib;winmm.lib;opengl32.lib;glu32.lib;ws2_32.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Build/Controller/Win32/Debug;../../Build/qtpropertybrowser/Win32/Debug;../../Build/libqxt/Win32/Debug;../../Util/libjpeg/lib;../../Util/SimRobot/Util/qt/Win32/lib;../../Util/snappy/lib/Win32/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/wd4101 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Src;../../Util/qtpropertybrowser;../../Util/Eigen;../../Util/SimRobot/Src/SimRobot;../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Src/SimRobotEditor;../../Util/snappy/include;../../Util/libqxt;../../Src/Platform/Win32;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;../../Util/SimRobot/Util/glew/Win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;TARGET_SIM;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>Controller.lib;qtpropertybrowser.lib;snappy.lib;qxt.lib;QtCore4.lib;QtGui4.lib;QtOpenGl4.lib;QtSvg4.lib;winmm.lib;opengl32.lib;glu32.lib;ws2_32.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Build/Controller/Win32/Release;../../Build/qtpropertybrowser/Win32/Release;../../Build/libqxt/Win32/Release;../../Util/libjpeg/lib;../../Util/SimRobot/Util/qt/Win32/lib;../../Util/snappy/lib/Win32/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\BehaviorControl2013.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\LibraryBase.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries\LibCodeRelease.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\CameraControlEngine\CameraControlEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\LEDHandler\LEDHandler.cpp" />
+    <ClCompile Include="..\..\Src\Modules\BehaviorControl\ManualHeadMotionProvider\ManualHeadMotionProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\CameraCalibrator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\CameraCalibratorV4.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\CognitionConfigurationDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\FrictionLearner.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\JointCalibrator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Configuration\MotionConfigurationDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\CameraProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\CognitionLogDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\LogConverter.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\MotionLogDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\MotionRobotHealthProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\NaoProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\RobotHealthProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\TeamDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\TeamDataSender.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Infrastructure\ThumbnailProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\BallLocator\BallLocator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\CombinedWorldModelProvider\CombinedWorldModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\FieldCoverageProvider\FieldCoverageProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\FreePartOfOpponentGoalProvider\LineBasedFreePartOfOpponentGoalProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\GlobalFieldCoverageProvider\GlobalFieldCoverageProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleClusterer.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleCombinator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleWheelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\OdometerProvider\OdometerProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\OdometryOnlySelfLocator\OdometryOnlySelfLocator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\OwnSideModelProvider\OwnSideModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\FieldModel.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\TemplateGenerator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\SelfLocator\UKFSample.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\SideConfidenceProvider\TemporarySideConfidenceProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\EvidenceGrid.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\Grid.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\USObstacleModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\ArmMotionEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BallTaking.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BIKEParameters.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BLAME.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\BlameData.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\GetUpEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\HeadMotionEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\MotionCombinator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\MotionSelector.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\SpecialActions.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BezierBase.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BKick.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BKickBase.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\BSplineGenerator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\CartTableController.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\FrontContour.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\IndykickEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\Indykick\ShellLimits.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngine.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineDrawings.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineKicks.cpp" />
+    <ClCompile Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineTools.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\BallPerceptor.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\BodyContourProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\CameraMatrixProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\ColorProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\CoordinateSystemProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\FieldBoundaryProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\GoalPerceptor.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\LinePerceptor.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\ObstacleSpotProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\PointExplorer.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\PossibleObstacleSpotProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\RegionAnalyzer.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\Regionizer.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Perception\RobotCameraMatrixProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\ArmContactModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\ExpInertiaSensorFilter3D.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\FallDownStateDetector.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\FootContactModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\FsrDataProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\FsrZmpProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\GroundContactDetector.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\InertiaSensorCalibrator.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\InertiaSensorFilter.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\JointDynamicsProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\JointFilter.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\RobotModelProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\SensorFilter.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\TorsoMatrixProvider.cpp" />
+    <ClCompile Include="..\..\Src\Modules\Sensing\USControl.cpp" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\BehaviorControl2013.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Cabsl.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\LibraryBase.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Libraries\LibCodeRelease.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Soccer.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\HandleGameState.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\HandlePenaltyState.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\PlayingState.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\GameControl\ReadyState.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\HeadControl.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\LookForward.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\LookLeft.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\HeadControl\Scan.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\PlaySound.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest\Arm.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\ArmMotionRequest\Arms.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadPanTilt.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadTarget.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\HeadMotionRequest\SetHeadTargetOnGround.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\GetUpEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\InWalkKick.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\SpecialAction.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\Stand.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkAtSpeed.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkAtSpeedPercentage.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Output\MotionRequest\WalkToTarget.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Defender.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Goalie.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Roles\Striker.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Skills\GetUp.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\BehaviorControl2013\Options\Tools\ButtonPressedAndReleased.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\CameraControlEngine\CameraControlEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\LEDHandler\LEDHandler.h" />
+    <ClInclude Include="..\..\Src\Modules\BehaviorControl\ManualHeadMotionProvider\ManualHeadMotionProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\CameraCalibrator.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\CameraCalibratorV4.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\CognitionConfigurationDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\FrictionLearner.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\JointCalibrator.h" />
+    <ClInclude Include="..\..\Src\Modules\Configuration\MotionConfigurationDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\CameraProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\CognitionLogDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\LogConverter.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\LogDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\MotionLogDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\MotionRobotHealthProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\NaoProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\RobotHealthProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\TeamDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\TeamDataSender.h" />
+    <ClInclude Include="..\..\Src\Modules\Infrastructure\ThumbnailProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\BallLocator\BallLocator.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\CombinedWorldModelProvider\CombinedWorldModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\FieldCoverageProvider\FieldCoverageProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\FreePartOfOpponentGoalProvider\LineBasedFreePartOfOpponentGoalProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\GlobalFieldCoverageProvider\GlobalFieldCoverageProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleClusterer.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleCombinator.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\ObstacleModelProvider\ObstacleWheelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\OdometerProvider\OdometerProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\OdometryOnlySelfLocator\OdometryOnlySelfLocator.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\OwnSideModelProvider\OwnSideModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\FieldModel.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocator.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\SelfLocatorParameters.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\TemplateGenerator.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SelfLocator\UKFSample.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\SideConfidenceProvider\TemporarySideConfidenceProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\EvidenceGrid.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\Grid.h" />
+    <ClInclude Include="..\..\Src\Modules\Modeling\USObstacleModelProvider\USObstacleModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\ArmMotion.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\ArmMotionEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BallTaking.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BIKEParameters.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BLAME.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\BlameData.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\GetUpEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\HeadMotionEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\MotionCombinator.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\MotionSelector.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\SpecialActions.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BezierBase.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BKick.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BKickBase.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\BSplineGenerator.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\CartTableController.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\FrontContour.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\IndykickEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\Indykick\ShellLimits.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\SubPhaseParameters.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngine.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineKicks.h" />
+    <ClInclude Include="..\..\Src\Modules\MotionControl\WalkingEngine\WalkingEngineTools.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\BallPerceptor.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\BodyContourProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\CameraMatrixProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\ColorProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\CoordinateSystemProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\FieldBoundaryProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\GoalPerceptor.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\LinePerceptor.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\ObstacleSpotProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\PointExplorer.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\PossibleObstacleSpotProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\RegionAnalyzer.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\Regionizer.h" />
+    <ClInclude Include="..\..\Src\Modules\Perception\RobotCameraMatrixProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\ArmContactModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\ExpInertiaSensorFilter3D.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\FallDownStateDetector.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\FootContactModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\FsrDataProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\FsrZmpProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\GroundContactDetector.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\InertiaSensorCalibrator.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\InertiaSensorFilter.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\JointDynamicsProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\JointFilter.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\RobotModelProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\SensorFilter.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\TorsoMatrixProvider.h" />
+    <ClInclude Include="..\..\Src\Modules\Sensing\USControl.h" />
+    <ClCompile Include="..\..\Src\Platform\Common\File.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Common\TcpComm.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Common\UdpComm.cpp" />
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\Robot.cpp" />
+    <ClCompile Include="..\..\Src\Platform\SimRobotQt\SystemCall.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Win32\BHAssert.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Win32\Semaphore.cpp" />
+    <ClCompile Include="..\..\Src\Platform\Win32\SoundPlayer.cpp" />
+    <ClInclude Include="..\..\Src\Platform\BHAssert.h" />
+    <ClInclude Include="..\..\Src\Platform\Camera.h" />
+    <ClInclude Include="..\..\Src\Platform\DebugHandler.h" />
+    <ClInclude Include="..\..\Src\Platform\File.h" />
+    <ClInclude Include="..\..\Src\Platform\Semaphore.h" />
+    <ClInclude Include="..\..\Src\Platform\SystemCall.h" />
+    <ClInclude Include="..\..\Src\Platform\TcpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\Thread.h" />
+    <ClInclude Include="..\..\Src\Platform\UdpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\Common\File.h" />
+    <ClInclude Include="..\..\Src\Platform\Common\TcpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\Common\UdpComm.h" />
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\Robot.h" />
+    <ClInclude Include="..\..\Src\Platform\SimRobotQt\SystemCall.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\BHAssert.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\Semaphore.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\SoundPlayer.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\StreamableHelper.h" />
+    <ClInclude Include="..\..\Src\Platform\Win32\Thread.h" />
+    <ClCompile Include="..\..\Src\Processes\Cognition.cpp" />
+    <ClCompile Include="..\..\Src\Processes\Debug.cpp" />
+    <ClCompile Include="..\..\Src\Processes\Motion.cpp" />
+    <ClInclude Include="..\..\Src\Processes\Cognition.h" />
+    <ClInclude Include="..\..\Src\Processes\Debug.h" />
+    <ClInclude Include="..\..\Src\Processes\Motion.h" />
+    <ClCompile Include="..\..\Src\Representations\Blackboard.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Configuration\CameraSettings.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Configuration\FieldDimensions.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Configuration\HeadLimits.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\CameraInfo.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\GameInfo.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\Image.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\RobotInfo.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\TeamInfo.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\TeamMateData.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Infrastructure\Thumbnail.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\BallModel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\CombinedWorldModel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\FieldCoverage.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\FreePartOfOpponentGoalModel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\GlobalFieldCoverage.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleClusters.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleModel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\ObstacleWheel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\RobotPose.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Modeling\RobotsModel.cpp" />
+    <ClCompile Include="..\..\Src\Representations\MotionControl\BikeRequest.cpp" />
+    <ClCompile Include="..\..\Src\Representations\MotionControl\MotionRequest.cpp" />
+    <ClCompile Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\BallPercept.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\BodyContour.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\CameraMatrix.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\ColorReference.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\FieldBoundary.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\GoalPercept.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\ImageCoordinateSystem.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\JPEGImage.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\LinePercept.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Perception\RegionPercept.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Sensing\BodyDynamics.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Sensing\FallDownState.cpp" />
+    <ClCompile Include="..\..\Src\Representations\Sensing\RobotModel.cpp" />
+    <ClInclude Include="..\..\Src\Representations\Blackboard.h" />
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\ActivationGraph.h" />
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorControlOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorLEDRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\BehaviorControl\BehaviorStatus.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\CameraCalibration.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\CameraSettings.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\DamageConfiguration.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\FieldDimensions.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\HeadLimits.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\JointCalibration.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\MassCalibration.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\RobotDimensions.h" />
+    <ClInclude Include="..\..\Src\Representations\Configuration\SensorCalibration.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\CameraInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\FrameInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\GameInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Image.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\JointData.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\JointDataDeg.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\KeyStates.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\LEDRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RoboCupGameControlData.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RobotHealth.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\RobotInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\SensorData.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\TeamInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\TeamMateData.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Thumbnail.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\USRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\FrameInfo_83e22.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\JointData_d198df791237.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\SensorDataRev5703.h" />
+    <ClInclude Include="..\..\Src\Representations\Infrastructure\Legacy\SensorData_2d284.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\BallModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\CombinedWorldModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\FieldCoverage.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\FreePartOfOpponentGoalModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\GlobalFieldCoverage.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleClusters.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\ObstacleWheel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\Odometer.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\OwnSideModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\RobotPose.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\RobotsModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Modeling\SideConfidence.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\ArmMotionEngineOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\ArmMotionRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BallTakingOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BikeEngineOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\BikeRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\GetUpEngineOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadAngleRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadJointRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\HeadMotionRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\IndykickEngineOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\IndykickRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionInfo.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\MotionSelection.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\OdometryData.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\SpecialActionRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\SpecialActionsOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\WalkingEngineOutput.h" />
+    <ClInclude Include="..\..\Src\Representations\MotionControl\WalkRequest.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\BallPercept.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\BallSpot.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\BallSpots.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\BodyContour.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\CameraMatrix.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\ColorReference.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\FieldBoundary.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\GoalPercept.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\ImageCoordinateSystem.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\JPEGImage.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\LinePercept.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\LineSpots.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\ObstacleSpots.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\PossibleObstacleSpots.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\RegionPercept.h" />
+    <ClInclude Include="..\..\Src\Representations\Perception\RobotPercept.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\ArmContactModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\BodyDynamics.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\FallDownState.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\FootContactModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\FsrData.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\FsrZmp.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\GroundContactState.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\InertiaSensorData.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\JointDynamics.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\OrientationData.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\RobotBalance.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\RobotModel.h" />
+    <ClInclude Include="..\..\Src\Representations\Sensing\TorsoMatrix.h" />
+    <ClCompile Include="..\..\Src\Tools\Enum.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Global.cpp" />
+    <ClCompile Include="..\..\Src\Tools\NTP.cpp" />
+    <ClCompile Include="..\..\Src\Tools\PathFinder.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Settings.cpp" />
+    <ClCompile Include="..\..\Src\Tools\BodyDynamics\BodyDynamicsProviderDelegate.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\CognitionLogger.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataStreamer.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDataTable.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugDrawings.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\DebugRequest.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\QueueFillRequest.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\TcpConnection.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Debugging\TimingManager.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\Differentiator.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution2D.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\GaussianDistribution3D.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\Geometry.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\Matrix.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\MVTools.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\Pose2D.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Math\RotationMatrix.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\InMessage.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueue.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.cpp" />
+    <ClCompile Include="..\..\Src\Tools\MessageQueue\OutMessage.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Module\Module.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Module\ModuleManager.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Optimization\DownhillSimplex.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Optimization\ParticleSwarm.cpp" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Process.cpp" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\ProcessFramework.cpp" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Receiver.cpp" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\Sender.cpp" />
+    <ClCompile Include="..\..\Src\Tools\ProcessFramework\TeamHandler.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\InOut.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\InStreams.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\OutStreams.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\SimpleMap.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\Streamable.cpp" />
+    <ClCompile Include="..\..\Src\Tools\Streams\StreamHandler.cpp" />
+    <ClInclude Include="..\..\Src\Tools\Boundary.h" />
+    <ClInclude Include="..\..\Src\Tools\ColorClasses.h" />
+    <ClInclude Include="..\..\Src\Tools\ConvexHull.h" />
+    <ClInclude Include="..\..\Src\Tools\Enum.h" />
+    <ClInclude Include="..\..\Src\Tools\ForwardKinematic.h" />
+    <ClInclude Include="..\..\Src\Tools\Global.h" />
+    <ClInclude Include="..\..\Src\Tools\InverseKinematic.h" />
+    <ClInclude Include="..\..\Src\Tools\MMX.h" />
+    <ClInclude Include="..\..\Src\Tools\NTP.h" />
+    <ClInclude Include="..\..\Src\Tools\PathFinder.h" />
+    <ClInclude Include="..\..\Src\Tools\Range.h" />
+    <ClInclude Include="..\..\Src\Tools\RingBuffer.h" />
+    <ClInclude Include="..\..\Src\Tools\RingBufferWithSum.h" />
+    <ClInclude Include="..\..\Src\Tools\SampleSet.h" />
+    <ClInclude Include="..\..\Src\Tools\Settings.h" />
+    <ClInclude Include="..\..\Src\Tools\Team.h" />
+    <ClInclude Include="..\..\Src\Tools\BodyDynamics\BodyDynamicsProviderDelegate.h" />
+    <ClInclude Include="..\..\Src\Tools\BodyDynamics\InverseDynamics.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\Asserts.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\CognitionLogger.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataStreamer.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDataTable.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDrawings.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugDrawings3D.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\Debugging.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugImages.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DebugRequest.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\DrawingHelpers.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\LogFileFormat.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\Modify.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\QueueFillRequest.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\Stopwatch.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\TcpConnection.h" />
+    <ClInclude Include="..\..\Src\Tools\Debugging\TimingManager.h" />
+    <ClInclude Include="..\..\Src\Tools\ImageProcessing\ColorModelConversions.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Approx.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Common.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Covariance.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\CurveFitting.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Differentiator.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution2D.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianDistribution3D.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\GaussianTable.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Geometry.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Kalman.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix2x2.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Matrix3x3.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\MVTools.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Pose2D.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Pose3D.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Probabilistics.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Random.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\RotationMatrix.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialInertia.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialInertiaDerivative.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialTransform.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\SpatialVector.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Vector.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Vector2.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\Vector3.h" />
+    <ClInclude Include="..\..\Src\Tools\Math\YaMatrix.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\InMessage.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageIDs.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueue.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\MessageQueueBase.h" />
+    <ClInclude Include="..\..\Src\Tools\MessageQueue\OutMessage.h" />
+    <ClInclude Include="..\..\Src\Tools\Module\Module.h" />
+    <ClInclude Include="..\..\Src\Tools\Module\ModuleManager.h" />
+    <ClInclude Include="..\..\Src\Tools\Module\ModulePackage.h" />
+    <ClInclude Include="..\..\Src\Tools\Optimization\DownhillSimplex.h" />
+    <ClInclude Include="..\..\Src\Tools\Optimization\HillClimbing.h" />
+    <ClInclude Include="..\..\Src\Tools\Optimization\ParticleSwarm.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\PlatformProcess.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Process.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\ProcessFramework.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Receiver.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\Sender.h" />
+    <ClInclude Include="..\..\Src\Tools\ProcessFramework\TeamHandler.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\AutoStreamable.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\InOut.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\InStreams.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\OutStreams.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\SimpleMap.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\Streamable.h" />
+    <ClInclude Include="..\..\Src\Tools\Streams\StreamHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Controller.vcxproj">
+      <Project>{6CA93CAF-FA50-8F4E-ABF1-8585D3710D0F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="qtpropertybrowser.vcxproj">
+      <Project>{52845791-52E8-2928-E6A0-2150C24F416F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="libqxt.vcxproj">
+      <Project>{C7C37A1E-0554-5616-AB28-3E5DA67BE570}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

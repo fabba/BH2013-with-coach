@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SimRobotCore2</ProjectName>
+    <ProjectGuid>{06414987-063D-6DDB-231F-65A928130EA6}</ProjectGuid>
+    <RootNamespace>SimRobotCore2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotCore2\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobotCore2\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotCore2\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobotCore2\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotCore2\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobotCore2\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">SimRobotCore2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimRobotCore2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimRobotCore2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Util/glew/Win32/include;../../Util/SimRobot/Util/libxml2/include;../../Util/SimRobot/Util/ode/Win32/include;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>ode_double.lib;opengl32.lib;glu32.lib;glew32.lib;libxml2.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/glew/Win32/lib;../../Util/SimRobot/Util/libxml2/Win32/lib;../../Util/SimRobot/Util/ode/Win32/lib;../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Util/glew/Win32/include;../../Util/SimRobot/Util/libxml2/include;../../Util/SimRobot/Util/ode/Win32/include;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ode_double.lib;opengl32.lib;glu32.lib;glew32.lib;libxml2.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/glew/Win32/lib;../../Util/SimRobot/Util/libxml2/Win32/lib;../../Util/SimRobot/Util/ode/Win32/lib;../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions>/wd4503 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Src/SimRobotCore2;../../Util/SimRobot/Util/glew/Win32/include;../../Util/SimRobot/Util/libxml2/include;../../Util/SimRobot/Util/ode/Win32/include;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_STL;dDOUBLE;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>ode_double.lib;opengl32.lib;glu32.lib;glew32.lib;libxml2.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/glew/Win32/lib;../../Util/SimRobot/Util/libxml2/Win32/lib;../../Util/SimRobot/Util/ode/Win32/lib;../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\ActuatorsWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\CoreModule.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\SensorWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimObjectRenderer.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimObjectWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Element.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Parser.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Reader.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\Assert.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\OffscreenRenderer.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\System.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Axis.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Body.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Compound.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\GraphicalObject.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\PhysicalObject.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Scene.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\SimObject.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Simulation.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Actuator.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Hinge.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Joint.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Slider.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\Appearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\BoxAppearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\CapsuleAppearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\ComplexAppearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\CylinderAppearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\SphereAppearance.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\BoxGeometry.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\CapsuleGeometry.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\CylinderGeometry.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\Geometry.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\SphereGeometry.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\BoxMass.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\InertiaMatrixMass.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\Mass.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\SphereMass.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Motors\ServoMotor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Motors\VelocityMotor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Accelerometer.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\ApproxDistanceSensor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Camera.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\CollisionSensor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\DepthImageSensor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Gyroscope.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Sensor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\SingleDistanceSensor.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Matrix3x3.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\OpenGLTools.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Texture.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Vector3.cpp" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotCore2\ActuatorsWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"ActuatorsWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/ActuatorsWidget.h -o ../../Build/SimRobotCore2/Win32/Develop/moc_ActuatorsWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotCore2/Win32/Develop/moc_ActuatorsWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"ActuatorsWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/ActuatorsWidget.h -o ../../Build/SimRobotCore2/Win32/Debug/moc_ActuatorsWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotCore2/Win32/Debug/moc_ActuatorsWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"ActuatorsWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/ActuatorsWidget.h -o ../../Build/SimRobotCore2/Win32/Release/moc_ActuatorsWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotCore2/Win32/Release/moc_ActuatorsWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\CoreModule.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotCore2\SensorWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SensorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SensorWidget.h -o ../../Build/SimRobotCore2/Win32/Develop/moc_SensorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotCore2/Win32/Develop/moc_SensorWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SensorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SensorWidget.h -o ../../Build/SimRobotCore2/Win32/Debug/moc_SensorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotCore2/Win32/Debug/moc_SensorWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SensorWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SensorWidget.h -o ../../Build/SimRobotCore2/Win32/Release/moc_SensorWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotCore2/Win32/Release/moc_SensorWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimObjectRenderer.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimObjectWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimObjectWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SimObjectWidget.h -o ../../Build/SimRobotCore2/Win32/Develop/moc_SimObjectWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotCore2/Win32/Develop/moc_SimObjectWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimObjectWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SimObjectWidget.h -o ../../Build/SimRobotCore2/Win32/Debug/moc_SimObjectWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotCore2/Win32/Debug/moc_SimObjectWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimObjectWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NO_STL -DdDOUBLE -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Src/SimRobotCore2 -I../../Util/SimRobot/Util/glew/Win32/include -I../../Util/SimRobot/Util/libxml2/include -I../../Util/SimRobot/Util/ode/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtOpenGL ../../Util/SimRobot/Src/SimRobotCore2/SimObjectWidget.h -o ../../Build/SimRobotCore2/Win32/Release/moc_SimObjectWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotCore2/Win32/Release/moc_SimObjectWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimRobotCore2.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Element.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Parser.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Parser\Reader.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\Assert.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\OffscreenRenderer.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\OpenGL.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Platform\System.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Axis.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Body.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Compound.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\GraphicalObject.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\PhysicalObject.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Scene.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\SimObject.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Simulation.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Actuator.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Hinge.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Joint.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Actuators\Slider.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\Appearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\BoxAppearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\CapsuleAppearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\ComplexAppearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\CylinderAppearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Appearances\SphereAppearance.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\BoxGeometry.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\CapsuleGeometry.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\CylinderGeometry.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\Geometry.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Geometries\SphereGeometry.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\BoxMass.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\InertiaMatrixMass.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\Mass.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Masses\SphereMass.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Motors\Motor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Motors\ServoMotor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Motors\VelocityMotor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Accelerometer.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\ApproxDistanceSensor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Camera.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\CollisionSensor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\DepthImageSensor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Gyroscope.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\Sensor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Simulation\Sensors\SingleDistanceSensor.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Matrix3x3.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\ODETools.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\OpenGLTools.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Pose3.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Texture.h" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobotCore2\Tools\Vector3.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobotCore2\SimRobotCore2.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotCore2.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotCore2 ../../Util/SimRobot/Src/SimRobotCore2/SimRobotCore2.qrc -o ../../Build/SimRobotCore2/Win32/Develop/qrc_SimRobotCore2.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/SimRobot/Src/SimRobotCore2/Icons/arrow_rotate_clockwise.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/brick.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/bricks.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/camera.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/chart_line.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/DragPlane.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/layers.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/link.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/note.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/opening_angle.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/slider.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/transmit_go.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobotCore2/Win32/Develop/qrc_SimRobotCore2.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotCore2.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotCore2 ../../Util/SimRobot/Src/SimRobotCore2/SimRobotCore2.qrc -o ../../Build/SimRobotCore2/Win32/Debug/qrc_SimRobotCore2.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/SimRobot/Src/SimRobotCore2/Icons/arrow_rotate_clockwise.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/brick.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/bricks.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/camera.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/chart_line.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/DragPlane.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/layers.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/link.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/note.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/opening_angle.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/slider.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/transmit_go.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobotCore2/Win32/Debug/qrc_SimRobotCore2.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotCore2.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobotCore2 ../../Util/SimRobot/Src/SimRobotCore2/SimRobotCore2.qrc -o ../../Build/SimRobotCore2/Win32/Release/qrc_SimRobotCore2.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/SimRobot/Src/SimRobotCore2/Icons/arrow_rotate_clockwise.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/brick.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/bricks.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/camera.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/chart_line.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/DragPlane.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/layers.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/link.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/note.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/opening_angle.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/slider.png;../../Util/SimRobot/Src/SimRobotCore2/Icons/transmit_go.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobotCore2/Win32/Release/qrc_SimRobotCore2.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Develop\qrc_SimRobotCore2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\arrow_rotate_clockwise.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\brick.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\bricks.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\camera.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\chart_line.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\DragPlane.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\layers.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\link.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\note.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\opening_angle.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\slider.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobotCore2\Icons\transmit_go.png" />
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Develop\moc_ActuatorsWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Develop\moc_SensorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Develop\moc_SimObjectWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Debug\qrc_SimRobotCore2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Debug\moc_ActuatorsWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Debug\moc_SensorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Debug\moc_SimObjectWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Release\qrc_SimRobotCore2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Release\moc_ActuatorsWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Release\moc_SensorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobotCore2\Win32\Release\moc_SimObjectWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

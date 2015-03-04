@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SimRobot</ProjectName>
+    <ProjectGuid>{7C9EA24B-E4D2-ED5C-1C38-581555B1099C}</ProjectGuid>
+    <RootNamespace>SimRobot</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobot\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\SimRobot\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobot\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\SimRobot\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobot\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\SimRobot\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">SimRobot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.exe</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimRobot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimRobot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;QtSvg4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;QtSvg4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;../../Util/SimRobot/Util/qt/Win32/include/QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_SHARED;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;QT_NO_STL;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>qtmain.lib;QtGui4.lib;QtCore4.lib;QtSvg4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\Main.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\MainWindow.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\qtdotnetstyle.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\RegisteredDockWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\SceneGraphDockWidget.cpp" />
+    <ClCompile Include="..\..\Util\SimRobot\Src\SimRobot\StatusBar.cpp" />
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobot\MacFullscreen.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobot\MainWindow.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/MainWindow.h -o ../../Build/SimRobot/Win32/Develop/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/moc_MainWindow.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/MainWindow.h -o ../../Build/SimRobot/Win32/Debug/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/moc_MainWindow.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"MainWindow.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/MainWindow.h -o ../../Build/SimRobot/Win32/Release/moc_MainWindow.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/moc_MainWindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobot\qtdotnetstyle.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobot\RegisteredDockWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"RegisteredDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/RegisteredDockWidget.h -o ../../Build/SimRobot/Win32/Develop/moc_RegisteredDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/moc_RegisteredDockWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"RegisteredDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/RegisteredDockWidget.h -o ../../Build/SimRobot/Win32/Debug/moc_RegisteredDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/moc_RegisteredDockWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"RegisteredDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/RegisteredDockWidget.h -o ../../Build/SimRobot/Win32/Release/moc_RegisteredDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/moc_RegisteredDockWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobot\resource.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobot\SceneGraphDockWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SceneGraphDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/SceneGraphDockWidget.h -o ../../Build/SimRobot/Win32/Develop/moc_SceneGraphDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/moc_SceneGraphDockWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SceneGraphDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/SceneGraphDockWidget.h -o ../../Build/SimRobot/Win32/Debug/moc_SceneGraphDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/moc_SceneGraphDockWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SceneGraphDockWidget.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/SceneGraphDockWidget.h -o ../../Build/SimRobot/Win32/Release/moc_SceneGraphDockWidget.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/moc_SceneGraphDockWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Util\SimRobot\Src\SimRobot\SimRobot.h" />
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobot\StatusBar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"StatusBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/StatusBar.h -o ../../Build/SimRobot/Win32/Develop/moc_StatusBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/moc_StatusBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"StatusBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/StatusBar.h -o ../../Build/SimRobot/Win32/Debug/moc_StatusBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/moc_StatusBar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"StatusBar.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_SHARED -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB -DQT_NO_STL -D_CRT_SECURE_NO_DEPRECATE -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI -I../../Util/SimRobot/Util/qt/Win32/include/QtSvg ../../Util/SimRobot/Src/SimRobot/StatusBar.h -o ../../Build/SimRobot/Win32/Release/moc_StatusBar.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/moc_StatusBar.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Develop\help.qch">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"help.qch (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Develop\help.qch ..\..\Build\SimRobot\Win32\Develop\help.qch</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/help.qch;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Develop\helpcollection.qhc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"helpcollection.qhc (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Develop\helpcollection.qhc ..\..\Build\SimRobot\Win32\Develop\helpcollection.qhc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/helpcollection.qhc;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ResourceCompile Include="..\..\Util\SimRobot\Src\SimRobot\SimRobot.rc" />
+    <CustomBuild Include="..\..\Build\SimRobotCore2\Win32\Develop\SimRobotCore2.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotCore2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimRobotCore2\Win32\Develop\SimRobotCore2.dll ..\..\Build\SimRobot\Win32\Develop\SimRobotCore2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/SimRobotCore2.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotEditor\Win32\Develop\SimRobotEditor.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotEditor.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimRobotEditor\Win32\Develop\SimRobotEditor.dll ..\..\Build\SimRobot\Win32\Develop\SimRobotEditor.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/SimRobotEditor.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Develop\SimRobotHelp.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobotHelp.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Develop\SimRobotHelp.dll ..\..\Build\SimRobot\Win32\Develop\SimRobotHelp.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/SimRobotHelp.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimulatedNao\Win32\Develop\SimulatedNao.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimulatedNao.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Build\SimulatedNao\Win32\Develop\SimulatedNao.dll ..\..\Build\SimRobot\Win32\Develop\SimulatedNao.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/SimulatedNao.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\SimRobot\Win32\Develop\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtCore4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\SimRobot\Win32\Debug\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtCore4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtCore4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCore4.dll ..\..\Build\SimRobot\Win32\Release\QtCore4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtCore4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\SimRobot\Win32\Develop\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtGui4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\SimRobot\Win32\Debug\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtGui4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtGui4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtGui4.dll ..\..\Build\SimRobot\Win32\Release\QtGui4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtGui4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtSvg4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtSvg4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSvg4.dll ..\..\Build\SimRobot\Win32\Develop\QtSvg4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtSvg4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtSvg4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSvg4.dll ..\..\Build\SimRobot\Win32\Debug\QtSvg4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtSvg4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtSvg4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSvg4.dll ..\..\Build\SimRobot\Win32\Release\QtSvg4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtSvg4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtOpenGL4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtOpenGL4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtOpenGL4.dll ..\..\Build\SimRobot\Win32\Develop\QtOpenGL4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtOpenGL4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtOpenGL4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtOpenGL4.dll ..\..\Build\SimRobot\Win32\Debug\QtOpenGL4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtOpenGL4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtOpenGL4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtOpenGL4.dll ..\..\Build\SimRobot\Win32\Release\QtOpenGL4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtOpenGL4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\libxml2\Win32\bin\libxml2.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"libxml2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\libxml2\Win32\bin\libxml2.dll ..\..\Build\SimRobot\Win32\Develop\libxml2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/libxml2.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"libxml2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\libxml2\Win32\bin\libxml2.dll ..\..\Build\SimRobot\Win32\Debug\libxml2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/libxml2.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"libxml2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\libxml2\Win32\bin\libxml2.dll ..\..\Build\SimRobot\Win32\Release\libxml2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/libxml2.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\glew\Win32\bin\glew32.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"glew32.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\glew\Win32\bin\glew32.dll ..\..\Build\SimRobot\Win32\Develop\glew32.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/glew32.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"glew32.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\glew\Win32\bin\glew32.dll ..\..\Build\SimRobot\Win32\Debug\glew32.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/glew32.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"glew32.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\glew\Win32\bin\glew32.dll ..\..\Build\SimRobot\Win32\Release\glew32.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/glew32.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtCLucene4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtCLucene4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCLucene4.dll ..\..\Build\SimRobot\Win32\Develop\QtCLucene4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtCLucene4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtCLucene4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCLucene4.dll ..\..\Build\SimRobot\Win32\Debug\QtCLucene4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtCLucene4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtCLucene4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtCLucene4.dll ..\..\Build\SimRobot\Win32\Release\QtCLucene4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtCLucene4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtHelp4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtHelp4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtHelp4.dll ..\..\Build\SimRobot\Win32\Develop\QtHelp4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtHelp4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtHelp4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtHelp4.dll ..\..\Build\SimRobot\Win32\Debug\QtHelp4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtHelp4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtHelp4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtHelp4.dll ..\..\Build\SimRobot\Win32\Release\QtHelp4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtHelp4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtNetwork4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtNetwork4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtNetwork4.dll ..\..\Build\SimRobot\Win32\Develop\QtNetwork4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtNetwork4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtNetwork4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtNetwork4.dll ..\..\Build\SimRobot\Win32\Debug\QtNetwork4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtNetwork4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtNetwork4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtNetwork4.dll ..\..\Build\SimRobot\Win32\Release\QtNetwork4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtNetwork4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtSql4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtSql4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSql4.dll ..\..\Build\SimRobot\Win32\Develop\QtSql4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtSql4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtSql4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSql4.dll ..\..\Build\SimRobot\Win32\Debug\QtSql4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtSql4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtSql4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtSql4.dll ..\..\Build\SimRobot\Win32\Release\QtSql4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtSql4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\QtXml4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"QtXml4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtXml4.dll ..\..\Build\SimRobot\Win32\Develop\QtXml4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/QtXml4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"QtXml4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtXml4.dll ..\..\Build\SimRobot\Win32\Debug\QtXml4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/QtXml4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"QtXml4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\QtXml4.dll ..\..\Build\SimRobot\Win32\Release\QtXml4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/QtXml4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Util\qt\Win32\bin\sqldrivers\qsqlite4.dll">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qsqlite4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\sqldrivers\qsqlite4.dll ..\..\Build\SimRobot\Win32\Develop\sqldrivers\qsqlite4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/sqldrivers/qsqlite4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qsqlite4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\sqldrivers\qsqlite4.dll ..\..\Build\SimRobot\Win32\Debug\sqldrivers\qsqlite4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/sqldrivers/qsqlite4.dll;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qsqlite4.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Util\SimRobot\Util\qt\Win32\bin\sqldrivers\qsqlite4.dll ..\..\Build\SimRobot\Win32\Release\sqldrivers\qsqlite4.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/sqldrivers/qsqlite4.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\SimRobot\Src\SimRobot\SimRobot.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"SimRobot.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobot ../../Util/SimRobot/Src/SimRobot/SimRobot.qrc -o ../../Build/SimRobot/Win32/Develop/qrc_SimRobot.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/SimRobot/Src/SimRobot/Icons/application_side_tree.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_redo.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_undo.png;../../Util/SimRobot/Src/SimRobot/Icons/control_play_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_start_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_step_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/cut.png;../../Util/SimRobot/Src/SimRobot/Icons/disk.png;../../Util/SimRobot/Src/SimRobot/Icons/folder.png;../../Util/SimRobot/Src/SimRobot/Icons/folder_page.png;../../Util/SimRobot/Src/SimRobot/Icons/page_copy.png;../../Util/SimRobot/Src/SimRobot/Icons/page_paste.png;../../Util/SimRobot/Src/SimRobot/Icons/SimRobot.png;../../Util/SimRobot/Src/SimRobot/Icons/tag_green.png;../../Util/SimRobot/Src/SimRobot/Icons/textfield.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/SimRobot/Win32/Develop/qrc_SimRobot.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobot.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobot ../../Util/SimRobot/Src/SimRobot/SimRobot.qrc -o ../../Build/SimRobot/Win32/Debug/qrc_SimRobot.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/SimRobot/Src/SimRobot/Icons/application_side_tree.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_redo.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_undo.png;../../Util/SimRobot/Src/SimRobot/Icons/control_play_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_start_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_step_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/cut.png;../../Util/SimRobot/Src/SimRobot/Icons/disk.png;../../Util/SimRobot/Src/SimRobot/Icons/folder.png;../../Util/SimRobot/Src/SimRobot/Icons/folder_page.png;../../Util/SimRobot/Src/SimRobot/Icons/page_copy.png;../../Util/SimRobot/Src/SimRobot/Icons/page_paste.png;../../Util/SimRobot/Src/SimRobot/Icons/SimRobot.png;../../Util/SimRobot/Src/SimRobot/Icons/tag_green.png;../../Util/SimRobot/Src/SimRobot/Icons/textfield.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/qrc_SimRobot.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobot.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name SimRobot ../../Util/SimRobot/Src/SimRobot/SimRobot.qrc -o ../../Build/SimRobot/Win32/Release/qrc_SimRobot.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/SimRobot/Src/SimRobot/Icons/application_side_tree.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_redo.png;../../Util/SimRobot/Src/SimRobot/Icons/arrow_undo.png;../../Util/SimRobot/Src/SimRobot/Icons/control_play_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_start_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/control_step_blue.png;../../Util/SimRobot/Src/SimRobot/Icons/cut.png;../../Util/SimRobot/Src/SimRobot/Icons/disk.png;../../Util/SimRobot/Src/SimRobot/Icons/folder.png;../../Util/SimRobot/Src/SimRobot/Icons/folder_page.png;../../Util/SimRobot/Src/SimRobot/Icons/page_copy.png;../../Util/SimRobot/Src/SimRobot/Icons/page_paste.png;../../Util/SimRobot/Src/SimRobot/Icons/SimRobot.png;../../Util/SimRobot/Src/SimRobot/Icons/tag_green.png;../../Util/SimRobot/Src/SimRobot/Icons/textfield.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/qrc_SimRobot.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Develop\qrc_SimRobot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\application_side_tree.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\arrow_redo.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\arrow_undo.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\control_play_blue.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\control_start_blue.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\control_step_blue.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\cut.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\disk.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\folder.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\folder_page.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\page_copy.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\page_paste.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\SimRobot.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\tag_green.png" />
+    <None Include="..\..\Util\SimRobot\Src\SimRobot\Icons\textfield.png" />
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Develop\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Develop\moc_RegisteredDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Develop\moc_SceneGraphDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Develop\moc_StatusBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Debug\help.qch">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"help.qch (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Debug\help.qch ..\..\Build\SimRobot\Win32\Debug\help.qch</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/help.qch;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Debug\helpcollection.qhc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"helpcollection.qhc (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Debug\helpcollection.qhc ..\..\Build\SimRobot\Win32\Debug\helpcollection.qhc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/helpcollection.qhc;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotCore2\Win32\Debug\SimRobotCore2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotCore2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimRobotCore2\Win32\Debug\SimRobotCore2.dll ..\..\Build\SimRobot\Win32\Debug\SimRobotCore2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/SimRobotCore2.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotEditor\Win32\Debug\SimRobotEditor.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotEditor.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimRobotEditor\Win32\Debug\SimRobotEditor.dll ..\..\Build\SimRobot\Win32\Debug\SimRobotEditor.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/SimRobotEditor.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Debug\SimRobotHelp.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimRobotHelp.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Debug\SimRobotHelp.dll ..\..\Build\SimRobot\Win32\Debug\SimRobotHelp.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/SimRobotHelp.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimulatedNao\Win32\Debug\SimulatedNao.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"SimulatedNao.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy ..\..\Build\SimulatedNao\Win32\Debug\SimulatedNao.dll ..\..\Build\SimRobot\Win32\Debug\SimulatedNao.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/SimRobot/Win32/Debug/SimulatedNao.dll;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Debug\qrc_SimRobot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Debug\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Debug\moc_RegisteredDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Debug\moc_SceneGraphDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Debug\moc_StatusBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Release\help.qch">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"help.qch (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Release\help.qch ..\..\Build\SimRobot\Win32\Release\help.qch</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/help.qch;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Release\helpcollection.qhc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"helpcollection.qhc (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Release\helpcollection.qhc ..\..\Build\SimRobot\Win32\Release\helpcollection.qhc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/helpcollection.qhc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotCore2\Win32\Release\SimRobotCore2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotCore2.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimRobotCore2\Win32\Release\SimRobotCore2.dll ..\..\Build\SimRobot\Win32\Release\SimRobotCore2.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/SimRobotCore2.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotEditor\Win32\Release\SimRobotEditor.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotEditor.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimRobotEditor\Win32\Release\SimRobotEditor.dll ..\..\Build\SimRobot\Win32\Release\SimRobotEditor.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/SimRobotEditor.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimRobotHelp\Win32\Release\SimRobotHelp.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimRobotHelp.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimRobotHelp\Win32\Release\SimRobotHelp.dll ..\..\Build\SimRobot\Win32\Release\SimRobotHelp.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/SimRobotHelp.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\SimulatedNao\Win32\Release\SimulatedNao.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"SimulatedNao.dll (copy)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy ..\..\Build\SimulatedNao\Win32\Release\SimulatedNao.dll ..\..\Build\SimRobot\Win32\Release\SimulatedNao.dll</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/SimRobot/Win32/Release/SimulatedNao.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Release\qrc_SimRobot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Release\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Release\moc_RegisteredDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Release\moc_SceneGraphDockWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\SimRobot\Win32\Release\moc_StatusBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SimRobotCore2.vcxproj">
+      <Project>{06414987-063D-6DDB-231F-65A928130EA6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SimRobotEditor.vcxproj">
+      <Project>{F1F89685-3360-6355-3726-11909FAD1AB4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SimRobotHelp.vcxproj">
+      <Project>{A9B37A8C-C7D9-EF99-D367-9F24BFBD6295}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SimulatedNao.vcxproj">
+      <Project>{BEC03806-D677-F901-F352-6443D791F775}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SpecialActions.vcxproj">
+      <Project>{E8666CBA-9F66-5D6A-F722-62E933715CF6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

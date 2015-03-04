@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>qtpropertybrowser</ProjectName>
+    <ProjectGuid>{52845791-52E8-2928-E6A0-2150C24F416F}</ProjectGuid>
+    <RootNamespace>qtpropertybrowser</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\qtpropertybrowser\Win32\Develop\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Build\qtpropertybrowser\Win32\Develop\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\qtpropertybrowser\Win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Build\qtpropertybrowser\Win32\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\qtpropertybrowser\Win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Build\qtpropertybrowser\Win32\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">qtpropertybrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qtpropertybrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qtpropertybrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Build/qtpropertybrowser/Win32/Develop;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../Build/qtpropertybrowser/Win32/Debug;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>../../Build/qtpropertybrowser/Win32/Release;../../Util/SimRobot/Util/qt/Win32/include;../../Util/SimRobot/Util/qt/Win32/include/QtCore;../../Util/SimRobot/Util/qt/Win32/include/QtGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;QT_NO_STL;QT_QTPROPERTYBROWSER_EXPORT;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Util/SimRobot/Util/qt/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtbuttonpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qteditorfactory.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtgroupboxpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertybrowserutils.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtpropertymanager.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qttreepropertybrowser.cpp" />
+    <ClCompile Include="..\..\Util\qtpropertybrowser\qtvariantproperty.cpp" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtpropertybrowser.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name qtpropertybrowser ../../Util/qtpropertybrowser/qtpropertybrowser.qrc -o ../../Build/qtpropertybrowser/Win32/Develop/qrc_qtpropertybrowser.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Util/qtpropertybrowser/images/cursor-arrow.png;../../Util/qtpropertybrowser/images/cursor-busy.png;../../Util/qtpropertybrowser/images/cursor-closedhand.png;../../Util/qtpropertybrowser/images/cursor-cross.png;../../Util/qtpropertybrowser/images/cursor-forbidden.png;../../Util/qtpropertybrowser/images/cursor-hand.png;../../Util/qtpropertybrowser/images/cursor-hsplit.png;../../Util/qtpropertybrowser/images/cursor-ibeam.png;../../Util/qtpropertybrowser/images/cursor-openhand.png;../../Util/qtpropertybrowser/images/cursor-sizeall.png;../../Util/qtpropertybrowser/images/cursor-sizeb.png;../../Util/qtpropertybrowser/images/cursor-sizef.png;../../Util/qtpropertybrowser/images/cursor-sizeh.png;../../Util/qtpropertybrowser/images/cursor-sizev.png;../../Util/qtpropertybrowser/images/cursor-uparrow.png;../../Util/qtpropertybrowser/images/cursor-vsplit.png;../../Util/qtpropertybrowser/images/cursor-wait.png;../../Util/qtpropertybrowser/images/cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtpropertybrowser.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name qtpropertybrowser ../../Util/qtpropertybrowser/qtpropertybrowser.qrc -o ../../Build/qtpropertybrowser/Win32/Debug/qrc_qtpropertybrowser.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Util/qtpropertybrowser/images/cursor-arrow.png;../../Util/qtpropertybrowser/images/cursor-busy.png;../../Util/qtpropertybrowser/images/cursor-closedhand.png;../../Util/qtpropertybrowser/images/cursor-cross.png;../../Util/qtpropertybrowser/images/cursor-forbidden.png;../../Util/qtpropertybrowser/images/cursor-hand.png;../../Util/qtpropertybrowser/images/cursor-hsplit.png;../../Util/qtpropertybrowser/images/cursor-ibeam.png;../../Util/qtpropertybrowser/images/cursor-openhand.png;../../Util/qtpropertybrowser/images/cursor-sizeall.png;../../Util/qtpropertybrowser/images/cursor-sizeb.png;../../Util/qtpropertybrowser/images/cursor-sizef.png;../../Util/qtpropertybrowser/images/cursor-sizeh.png;../../Util/qtpropertybrowser/images/cursor-sizev.png;../../Util/qtpropertybrowser/images/cursor-uparrow.png;../../Util/qtpropertybrowser/images/cursor-vsplit.png;../../Util/qtpropertybrowser/images/cursor-wait.png;../../Util/qtpropertybrowser/images/cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtpropertybrowser.qrc (Qt rcc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\rcc.exe -name qtpropertybrowser ../../Util/qtpropertybrowser/qtpropertybrowser.qrc -o ../../Build/qtpropertybrowser/Win32/Release/qrc_qtpropertybrowser.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Util/qtpropertybrowser/images/cursor-arrow.png;../../Util/qtpropertybrowser/images/cursor-busy.png;../../Util/qtpropertybrowser/images/cursor-closedhand.png;../../Util/qtpropertybrowser/images/cursor-cross.png;../../Util/qtpropertybrowser/images/cursor-forbidden.png;../../Util/qtpropertybrowser/images/cursor-hand.png;../../Util/qtpropertybrowser/images/cursor-hsplit.png;../../Util/qtpropertybrowser/images/cursor-ibeam.png;../../Util/qtpropertybrowser/images/cursor-openhand.png;../../Util/qtpropertybrowser/images/cursor-sizeall.png;../../Util/qtpropertybrowser/images/cursor-sizeb.png;../../Util/qtpropertybrowser/images/cursor-sizef.png;../../Util/qtpropertybrowser/images/cursor-sizeh.png;../../Util/qtpropertybrowser/images/cursor-sizev.png;../../Util/qtpropertybrowser/images/cursor-uparrow.png;../../Util/qtpropertybrowser/images/cursor-vsplit.png;../../Util/qtpropertybrowser/images/cursor-wait.png;../../Util/qtpropertybrowser/images/cursor-whatsthis.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/qrc_qtpropertybrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Develop\qrc_qtpropertybrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-arrow.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-busy.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-closedhand.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-cross.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-forbidden.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-hand.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-hsplit.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-ibeam.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-openhand.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeall.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeb.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizef.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizeh.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-sizev.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-uparrow.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-vsplit.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-wait.png" />
+    <None Include="..\..\Util\qtpropertybrowser\images\cursor-whatsthis.png" />
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowserutils_p.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtpropertybrowserutils_p.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowserutils_p.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertybrowserutils_p.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtpropertybrowserutils_p.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowserutils_p.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertybrowserutils_p.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtpropertybrowserutils_p.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowserutils_p.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertybrowserutils_p.cpp</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertybrowserutils_p.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Develop\moc_qtpropertybrowserutils_p.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtbuttonpropertybrowser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtbuttonpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtbuttonpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qtbuttonpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtbuttonpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Develop/qtbuttonpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtbuttonpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtbuttonpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qtbuttonpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtbuttonpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Debug/qtbuttonpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtbuttonpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtbuttonpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtbuttonpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qtbuttonpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtbuttonpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Release/qtbuttonpropertybrowser.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qteditorfactory.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qteditorfactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qteditorfactory.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qteditorfactory.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qteditorfactory.cpp;../../Build/qtpropertybrowser/Win32/Develop/qteditorfactory.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qteditorfactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qteditorfactory.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qteditorfactory.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qteditorfactory.cpp;../../Build/qtpropertybrowser/Win32/Debug/qteditorfactory.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qteditorfactory.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qteditorfactory.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qteditorfactory.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qteditorfactory.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qteditorfactory.cpp;../../Build/qtpropertybrowser/Win32/Release/qteditorfactory.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtgroupboxpropertybrowser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtgroupboxpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtgroupboxpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qtgroupboxpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtgroupboxpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Develop/qtgroupboxpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtgroupboxpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtgroupboxpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qtgroupboxpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtgroupboxpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Debug/qtgroupboxpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtgroupboxpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtgroupboxpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtgroupboxpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qtgroupboxpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtgroupboxpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Release/qtgroupboxpropertybrowser.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertybrowser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qtpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Develop/qtpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qtpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Debug/qtpropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtpropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qtpropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Release/qtpropertybrowser.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtpropertymanager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtpropertymanager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertymanager.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qtpropertymanager.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtpropertymanager.cpp;../../Build/qtpropertybrowser/Win32/Develop/qtpropertymanager.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtpropertymanager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertymanager.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qtpropertymanager.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtpropertymanager.cpp;../../Build/qtpropertybrowser/Win32/Debug/qtpropertymanager.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtpropertymanager.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertymanager.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtpropertymanager.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qtpropertymanager.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtpropertymanager.cpp;../../Build/qtpropertybrowser/Win32/Release/qtpropertymanager.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qttreepropertybrowser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qttreepropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qttreepropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qttreepropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qttreepropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Develop/qttreepropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qttreepropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qttreepropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qttreepropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qttreepropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Debug/qttreepropertybrowser.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qttreepropertybrowser.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qttreepropertybrowser.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qttreepropertybrowser.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qttreepropertybrowser.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qttreepropertybrowser.cpp;../../Build/qtpropertybrowser/Win32/Release/qttreepropertybrowser.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Util\qtpropertybrowser\qtvariantproperty.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">"qtvariantproperty.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.h -o ../../Build/qtpropertybrowser/Win32/Develop/moc_qtvariantproperty.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Develop -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Develop/qtvariantproperty.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">../../Build/qtpropertybrowser/Win32/Develop/moc_qtvariantproperty.cpp;../../Build/qtpropertybrowser/Win32/Develop/qtvariantproperty.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"qtvariantproperty.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.h -o ../../Build/qtpropertybrowser/Win32/Debug/moc_qtvariantproperty.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -D_DEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Debug -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Debug/qtvariantproperty.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../Build/qtpropertybrowser/Win32/Debug/moc_qtvariantproperty.cpp;../../Build/qtpropertybrowser/Win32/Debug/qtvariantproperty.moc;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"qtvariantproperty.h (Qt moc)"</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.h -o ../../Build/qtpropertybrowser/Win32/Release/moc_qtvariantproperty.cpp&#x0D;&#x0A;..\..\Util\SimRobot\Util\qt\Win32\bin\moc.exe -DWIN32 -D_WIN32 -DNDEBUG -DQT_NO_STL -DQT_QTPROPERTYBROWSER_EXPORT -DQT_NO_DEBUG -D_MSC_VER=1500 -I../../Build/qtpropertybrowser/Win32/Release -I../../Util/SimRobot/Util/qt/Win32/include -I../../Util/SimRobot/Util/qt/Win32/include/QtCore -I../../Util/SimRobot/Util/qt/Win32/include/QtGUI ../../Util/qtpropertybrowser/qtvariantproperty.cpp -nw -o ../../Build/qtpropertybrowser/Win32/Release/qtvariantproperty.moc</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../Build/qtpropertybrowser/Win32/Release/moc_qtvariantproperty.cpp;../../Build/qtpropertybrowser/Win32/Release/qtvariantproperty.moc;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Debug\qrc_qtpropertybrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Debug\moc_qtpropertybrowserutils_p.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Release\qrc_qtpropertybrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\qtpropertybrowser\Win32\Release\moc_qtpropertybrowserutils_p.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
